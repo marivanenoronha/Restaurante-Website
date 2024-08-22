@@ -53,4 +53,10 @@
         padding: 10px;
         font-size: 0.9rem;
     }
+
+    .contact-page .btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+    }
 }
