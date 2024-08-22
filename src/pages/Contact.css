@@ -5,14 +5,7 @@
 }
 
 @media(max-width: 375px) {
-    .contact-page header {
-        margin-bottom: 20px;
-    }
-
-    .contact-page {
-        padding: 15px 0;
-    }
-
+    
     .contact-page .container {
         padding: 0 15px;
     }
@@ -30,10 +23,6 @@
     .contact-page .col-lg-6 {
         width: 100%;
         padding: 15px;
-    }
-
-    .contact-page .container {
-        padding: 0 15px;
     }
 
     .contact-page form {
@@ -72,10 +61,5 @@
         font-size: 0.9rem;
     }
 
-    .contact-page .btn {
-        width: 100%;
-        padding: 12px;
-        margin-top: 20px;
-        font-size: 1rem;
-    }
+    
 }
