@@ -1,6 +1,6 @@
 .menu-page header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-    url(../fotos//img/menu-img.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../fotos//img/menu-img.jpeg);
     height: 50vh;
 }
 
@@ -26,7 +26,8 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 10px;
+        gap: 20px;
+
     }
 
     .menu-page .row {
