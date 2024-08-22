@@ -3,3 +3,26 @@
     url(../fotos/img/about-chef1.jpg);
     height: 50vh;
 }
+
+@media(max-width: 375px) {
+    
+    .about-page header h1 {
+        font-size: 2rem;
+    }
+
+    .about-page .row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .about-page .col-lg-6 {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-page img {
+        max-width: 100%;
+        height: auto;
+    }
+}
