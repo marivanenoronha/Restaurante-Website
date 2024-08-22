@@ -55,7 +55,7 @@ function Contact() {
                                 <Form.Label htmlFor="comments" >Comentarios</Form.Label>
                                     <Form.Control type="textarea" id="comments"/> 
                             </Form.Group>
-                            <button type="submit" className="btn btn-success btn-lg">Enviar</button>
+                            <button type="submit" className="btn  bg-dark text-white btn-lg">Enviar</button>
                         </Form>
                     </div>
                 </div>
