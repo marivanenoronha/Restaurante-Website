@@ -5,61 +5,42 @@
 }
 
 @media(max-width: 375px) {
-    
-    .contact-page .container {
-        padding: 0 15px;
-    }
 
     .contact-page h1 {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         text-align: center;
     }
-
-    .contact-page .row {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .contact-page .col-lg-6 {
         width: 100%;
-        padding: 15px;
-    }
-
-    .contact-page form {
         padding: 0 15px;
-        width: 100%;
+        font-size: 12px;
+        margin-top: 15px;
     }
-
-    .contact-page form .row .col-md-6 {
-        width: 100%;
-        margin-bottom: 15px;
-    }
-
-    .contact-page .btn {
-        width: 100%;
-        font-size: 1rem;
-        padding: 10px;
-    }
-
+    
     .contact-page form .row {
         display: flex;
         flex-wrap: wrap;
         gap: 15px;
     }
-
+    
     .contact-page form .row .col-md-6 {
         width: 100%;
+        
     }
-
+    
     .contact-page form .row .col-md-6 label {
         font-size: 0.9rem;
     }
-
+    
     .contact-page form .row .col-md-6 input,
     .contact-page form .row .col-md-6 textarea {
         padding: 10px;
         font-size: 0.9rem;
     }
-
     
+    .contact-page .btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+    }
 }
