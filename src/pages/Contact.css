@@ -43,4 +43,14 @@
     .contact-page form .row .col-md-6 {
         width: 100%;
     }
+
+    .contact-page form .row .col-md-6 label {
+        font-size: 0.9rem;
+    }
+    
+    .contact-page form .row .col-md-6 input,
+    .contact-page form .row .col-md-6 textarea {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
 }
