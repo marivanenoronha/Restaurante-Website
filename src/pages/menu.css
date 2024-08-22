@@ -13,4 +13,12 @@
         font-size: 1.5rem;
         text-align: center;
     }
+
+    .menu-page .alacarte img,
+    .menu-page .aperitivo img,
+    .menu-page .drink img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
 }
