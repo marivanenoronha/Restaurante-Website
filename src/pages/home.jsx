@@ -12,7 +12,7 @@ function Home() {
     return (
         <div className="home-page">
             <header className="h-100 min-vh-100 d-flex align-items-center text-light shadow">
-                <div className="container">
+                <div className="Container">
                     <div className="row">
                         <div className="col-sm-6 d-flex d-sm-block flex-column align-items-center">
                             <h2 className="mb-0 text-success fw-bold">Bem vindo ao</h2>
@@ -23,7 +23,7 @@ function Home() {
                     </div>
                 </div>
             </header>
-            <div className="container my-3">
+            <div className="Container my-3">
                 <div className="row">
                     <div className="col-lg-6 d-flex justify-content-center d-none d-lg-flex">
                         <img src={AboutImg} className="img-fluid w-52" alt="about img" />
@@ -43,7 +43,7 @@ function Home() {
                 </div>
 
                 <div className="menu-section py-5 text-light shadow">
-                    <div className="container d-flex flex-column align-items-center">
+                    <div className="Container d-flex flex-column align-items-center">
                         <h2 className="fs-1 mb-5 text-uppercase fw-bold">Nossos favoritos</h2>
                         <div className="row mb-5 w-100">
                             <div className="col-lg d-flex flex-column align-items-center mb-5 mb-lg-0">
@@ -103,7 +103,7 @@ function Home() {
             <ImageGallery />
 
             <div className="bg-dark text-light py-5 shadow">
-                <div className="container">
+                <div className="Container">
                     <div className="row">
                         <div className="col-lg-6 d-flex flex-column align-items-center justify-content-center mb-5 mb-lg-o">
                             <ContactInfo />

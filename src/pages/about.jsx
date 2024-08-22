@@ -9,11 +9,11 @@ function About() {
     return (
         <div className="about-page">
             <header className="mt-5">
-                <div className="container h-100 d-flex align-items-center justify-content-center">
+                <div className="Container h-100 d-flex align-items-center justify-content-center">
                     <h1 className="text-light">Sobre nós</h1>
                 </div>
             </header>
-            <div className="container my-5">
+            <div className="Container my-5">
                 <p>Opções para todos os gostos, desde á la carte,
                     pratos aperitivos e frutos do mar.Trabalhamos com a execução dos mais variados pratos,
                     Todos nossos pratos são preparados e supervisionados por chefs renomados.
