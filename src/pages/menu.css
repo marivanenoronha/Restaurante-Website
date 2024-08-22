@@ -31,4 +31,10 @@
     .menu-page .row {
         flex-direction: column;
     }
+
+    .menu-page .alacarte .fs-1,
+    .menu-page .aperitivo .fs-1,
+    .menu-page .drink .fs-1 {
+        font-size: 1.25rem;
+    }
 }
