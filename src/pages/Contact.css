@@ -18,4 +18,19 @@
     .contact-page .container {
         padding: 0 15px;
     }
+
+    .contact-page form {
+        width: 100%;
+    }
+
+    .contact-page form .row .col-md-6 {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .contact-page .btn {
+        width: 100%;
+        font-size: 1rem;
+        padding: 10px;
+    }
 }
