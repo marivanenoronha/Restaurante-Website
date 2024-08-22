@@ -3,3 +3,19 @@
     url(../fotos/img/contact-menu.jpg);
     height: 50vh;
 }
+
+@media(max-width: 375px) {
+    .contact-page .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-page .col-lg-6 {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .contact-page .container {
+        padding: 0 15px;
+    }
+}
