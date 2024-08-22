@@ -1,27 +1,26 @@
 .contact-page header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-    url(../fotos/img/contact-menu.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../fotos/img/contact-menu.jpg);
     height: 50vh;
 }
 
 @media(max-width: 375px) {
+    .contact-page header {
+        margin-bottom: 20px;
+    }
 
     .contact-page {
-    padding: 15px 0;
-}
+        padding: 15px 0;
+    }
 
-.contact-page .container {
-    padding: 0 15px;
-}
+    .contact-page .container {
+        padding: 0 15px;
+    }
 
-.contact-page h1 {
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-.contact-page header {
-    margin-bottom: 20px;
-}
+    .contact-page h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
 
     .contact-page .row {
         flex-direction: column;
@@ -30,7 +29,7 @@
 
     .contact-page .col-lg-6 {
         width: 100%;
-        padding: 0 15px;
+        padding: 15px;
     }
 
     .contact-page .container {
@@ -38,6 +37,7 @@
     }
 
     .contact-page form {
+        padding: 0 15px;
         width: 100%;
     }
 
@@ -57,7 +57,7 @@
         flex-wrap: wrap;
         gap: 15px;
     }
-    
+
     .contact-page form .row .col-md-6 {
         width: 100%;
     }
@@ -65,7 +65,7 @@
     .contact-page form .row .col-md-6 label {
         font-size: 0.9rem;
     }
-    
+
     .contact-page form .row .col-md-6 input,
     .contact-page form .row .col-md-6 textarea {
         padding: 10px;
@@ -75,6 +75,7 @@
     .contact-page .btn {
         width: 100%;
         padding: 12px;
+        margin-top: 20px;
         font-size: 1rem;
     }
 }
