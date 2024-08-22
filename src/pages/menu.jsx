@@ -97,13 +97,13 @@ function Menu() {
     return (
         <div className="menu-page">
             <header className="mt-5">
-                <div className="Container h-100 d-flex align-items-center justify-content-center">
+                <div className="container h-100 d-flex align-items-center justify-content-center">
                     <h1 className="text-light">Menu</h1>
                 </div>
             </header>
 
             <div className="alacarte text-light py-5">
-                <div className="Container">
+                <div className="container">
                     <h2 className="text-center fs-1 mb-4 mb-lg-5 text-uppercase fw-bold text-success">Á la Carte</h2>
                     <div className="row ">
                         <div className="col-lg-6 d-flex justify-content-center">
@@ -134,7 +134,7 @@ function Menu() {
             </div>
 
             <div className="aperitivo  bg-dark text-light my-5">
-                <div className="Container">
+                <div className="container">
                     <h2 className="text-center fs-1 mb-4 mb-lg-5 text-uppercase fw-bold text-white">Aperitivos</h2>
                     <div className="row ">
                         <div className="col-lg-6 d-flex flex-column justify-content-around">
@@ -163,7 +163,7 @@ function Menu() {
                 </div>
             </div>
             <div className="aperitivo   my-5">
-                <div className="Container">
+                <div className="container">
                     <h2 className="text-center fs-1 mb-4 mb-lg-5 text-uppercase fw-bold text-success">Sobremesas</h2>
                     <div className="row ">
                         <div className="col-lg-6 d-flex justify-content-center">
@@ -192,7 +192,7 @@ function Menu() {
                 </div>
             </div>
             <div className="drink bg-dark  my-5">
-                <div className="Container">
+                <div className="container">
                     <h2 className="text-center fs-1 mb-4 mb-lg-5 text-uppercase fw-bold text-white">Bebidas</h2>
                     <div className="row ">
                         <div className="col-lg-6 d-flex flex-column justify-content-around">

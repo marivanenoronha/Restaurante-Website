@@ -8,12 +8,12 @@ function Contact() {
     return (
         <div className="contact-page">
           <header className="mt-5">
-            <div className="Container h-100 d-flex align-items-center justify-content-center">
+            <div className="container h-100 d-flex align-items-center justify-content-center">
                 <h1 className="text-light">Contato</h1>
             </div>
           </header>
 
-          <div className="Container my-5">
+          <div className="container my-5">
                 <div className="row">
                     <div className="col-lg-6 align-items-center justify-content-center">
                         <ContactInfo />
