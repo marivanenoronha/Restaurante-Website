@@ -24,7 +24,7 @@ export function Reviews() {
                        </CardBody>
                        <CardFooter className="d-flex align-items-center">
                         <img src={Person1} className="img-fluid rounded-circule mx-3 shadow" alt="" />
-                        <CardTitle className="text-success">Lara  Farias</CardTitle>
+                        <CardTitle className="text-dark">Lara  Farias</CardTitle>
                        </CardFooter>
                     </Card>
                 </div>
@@ -41,7 +41,7 @@ export function Reviews() {
                        </CardBody>
                        <CardFooter className="d-flex align-items-center">
                         <img src={Person2} className="img-fluid rounded-circule mx-3 shadow" alt="" />
-                        <CardTitle className="text-success">Junior Lemes</CardTitle>
+                        <CardTitle className="text-dark">Junior Lemes</CardTitle>
                        </CardFooter>
                     </Card>
                 </div>
@@ -57,7 +57,7 @@ export function Reviews() {
                        </CardBody>
                        <CardFooter className="d-flex align-items-center">
                         <img src={Person3} className="img-fluid rounded-circule mx-3 shadow" alt="" />
-                        <CardTitle className="text-success">Maria Jordani</CardTitle>
+                        <CardTitle className="text-dark">Maria Jordani</CardTitle>
                        </CardFooter>
                     </Card>
                 </div>
@@ -73,7 +73,7 @@ export function Reviews() {
                        </CardBody>
                        <CardFooter className="d-flex align-items-center">
                         <img src={Person4} className="img-fluid rounded-circule mx-3 shadow" alt="" />
-                        <CardTitle className="text-success">Lucas Ribeiro</CardTitle>
+                        <CardTitle className="text-dark">Lucas Ribeiro</CardTitle>
                        </CardFooter>
                     </Card>
                 </div>
