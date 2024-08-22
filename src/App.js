@@ -14,15 +14,15 @@ function App() {
     <div >
       <Navbar expand="1g" className='fixed-top bg-body-tertiary shadow'>
         <Container>
-          <Navbar.Brand className='navbar-brand text-success fw-semibold' >
+          <Navbar.Brand className='navbar-brand text-dark fw-semibold' >
             Restaurante-Website
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='me-auto justify-content-end w-100'>
               <Nav.Link href='/' className='active text-upercase'>Home</Nav.Link>
+              <Nav.Link href='/about' className='text-upercase'>Sobre nós</Nav.Link>
               <Nav.Link href='/menu' className='text-upercase'>Cardápio</Nav.Link>
-              <Nav.Link href='/about' className='text-upercase'>Sobre</Nav.Link>
               <Nav.Link href='/contact' className='text-upercase'>Contato</Nav.Link> 
             </Nav>
           </Navbar.Collapse>

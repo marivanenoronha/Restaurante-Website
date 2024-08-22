@@ -15,10 +15,9 @@ function Home() {
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-6 d-flex d-sm-block flex-column align-items-center">
-                            <h2 className="mb-0 text-success fw-bold">Bem vindo ao</h2>
-                            <h1 className="mb-5 text-success fw-bold text-center text-sm-start">
-                                Restaurante-Website</h1>
-                            <MenuBtn />
+                            <h2 className="mb-0 text-dark fw-bold"> </h2>
+                            <h1 className="mb-5 text-dark fw-bold text-center text-sm-start">
+                                </h1>
                         </div>
                     </div>
                 </div>
@@ -37,7 +36,7 @@ function Home() {
                             filé de peixe empanado, peixe frito, salada e fritas.
                         </p>
                         <Link to="/about">
-                            <button type="button" className="btn btn-outline-success btn-lg">Mais sobre nós</button>
+                            <button type="button" className="btn btn-outline-dark btn-lg">Mais sobre nós</button>
                         </Link>
                     </div>
                 </div>
