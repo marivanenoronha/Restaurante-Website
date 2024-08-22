@@ -104,7 +104,7 @@ function Menu() {
 
             <div className="alacarte text-light py-5">
                 <div className="container">
-                    <h2 className="text-center fs-1 mb-4 mb-lg-5 text-uppercase fw-bold text-success">Á la Carte</h2>
+                    <h2 className="text-center fs-1 mb-4 mb-lg-5 text-uppercase fw-bold text-dark">Á la Carte</h2>
                     <div className="row ">
                         <div className="col-lg-6 d-flex justify-content-center">
                             <img src={AlacarteImg} className="img-fluid w-80 mt-4 mt-lg-0" alt="" />
@@ -120,7 +120,7 @@ function Menu() {
                                             <CardText className="text-center fs-5">
                                                 {item.description}
                                             </CardText>
-                                            <CardText className="text-center fs-5 fw-bold text-success">
+                                            <CardText className="text-center fs-5 fw-bold text-dark">
                                                 {item.price}
                                             </CardText>
                                         </CardBody>
@@ -148,7 +148,7 @@ function Menu() {
                                             <CardText className="text-center fs-5">
                                                 {item.description}
                                             </CardText>
-                                            <CardText className="text-center fs-5 fw-bold text-success">
+                                            <CardText className="text-center fs-5 fw-bold text-dark">
                                                 {item.price}
                                             </CardText>
                                         </CardBody>
@@ -164,7 +164,7 @@ function Menu() {
             </div>
             <div className="aperitivo   my-5">
                 <div className="container">
-                    <h2 className="text-center fs-1 mb-4 mb-lg-5 text-uppercase fw-bold text-success">Sobremesas</h2>
+                    <h2 className="text-center fs-1 mb-4 mb-lg-5 text-uppercase fw-bold text-dark">Sobremesas</h2>
                     <div className="row ">
                         <div className="col-lg-6 d-flex justify-content-center">
                             <img src={DessertImg} className="img-fluid w-80 mt-4 mt-lg-0" alt="" />
@@ -180,7 +180,7 @@ function Menu() {
                                             <CardText className="text-center fs-5">
                                                 {item.description}
                                             </CardText>
-                                            <CardText className="text-center fs-5 fw-bold text-success">
+                                            <CardText className="text-center fs-5 fw-bold text-dark">
                                                 {item.price}
                                             </CardText>
                                         </CardBody>
@@ -206,7 +206,7 @@ function Menu() {
                                             <CardText className="text-center fs-5">
                                                 {item.description}
                                             </CardText>
-                                            <CardText className="text-center fs-5 fw-bold text-success">
+                                            <CardText className="text-center fs-5 fw-bold text-dark">
                                                 {item.price}
                                             </CardText>
                                         </CardBody>
