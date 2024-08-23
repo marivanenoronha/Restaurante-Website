@@ -1,13 +1,22 @@
 .about-page header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-    url(../fotos/img/about-chef1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../fotos/img/about-chef1.jpg);
     height: 50vh;
 }
 
 @media(max-width: 375px) {
-    
-    .about-page header h1 {
-        font-size: 2rem;
+
+    .about-page .container {
+        padding: 0 15px;
+    }
+
+    .about-page header {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .about-page .container p {
+        font-size: 0.9rem;
     }
 
     .about-page .row {
@@ -16,13 +25,26 @@
     }
 
     .about-page .col-lg-6 {
-        margin-bottom: 20px;
-        display: flex;
-        justify-content: center;
+        width: 100%;
+        padding: 0 15px;
+        text-align: center;
+        margin-bottom: 15px;
     }
 
     .about-page img {
-        max-width: 100%;
+        width: 100%;
         height: auto;
+    }
+
+    .about-page .bg-dark {
+        padding: 20px;
+    }
+
+    .about-page .my-5 {
+        padding: 0 15px;
+    }
+
+    .about-page h1 {
+        font-size: 1.8rem;
     }
 }
