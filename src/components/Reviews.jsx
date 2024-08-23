@@ -14,10 +14,10 @@ export function Reviews() {
                 <div className="col-lg-6"> 
                     <Card className="h-100 shadow">
                        <CardBody>
-                       <div className="p-4">
+                       <div className="p-4 ">
                             <CardText>
                                O melhor restaurante de frutos do mar, 
-                               com amplo espaço , a comida maravilosa e o 
+                               com amplo espaço, a comida maravilosa e o 
                                atendimento diferenciado.
                             </CardText>
                         </div>
@@ -34,7 +34,7 @@ export function Reviews() {
                        <CardBody>
                        <div className="p-4">
                             <CardText>
-                               A comida  e o atendimento maravilhoso,
+                               A comida e o atendimento maravilhoso,
                                 com certeza o melhor restaurante de frutos do mar
                             </CardText>
                         </div>

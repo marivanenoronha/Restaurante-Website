@@ -15,9 +15,9 @@ function Contact() {
 
             <div className="container my-5">
                 <div className="row">
-                    <div className="col-lg-6 align-items-center justify-content-center">
-                        <ContactInfo />
-                    </div>
+                <div className="col-lg-6 d-flex flex-column align-items-center justify-content-center mb-5 mb-lg-o">
+                            <ContactInfo />
+                        </div>
 
                     <div className="col-lg-6 d-flex justify-content-center">
                         <Form>
