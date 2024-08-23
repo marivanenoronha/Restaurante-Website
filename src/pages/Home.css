@@ -96,6 +96,18 @@ header h1 {
         text-align: center;
     }
 
+    .home-page .bg-dark h2{
+        font-size: 1.5rem;
+    }
+
+    .home-page .bg-dark h3{
+        font-size: 1.3rem;
+    }
+
+    .home-page .bg-dark p{
+        font-size: 1.0rem;
+    }
+
     .home-page .bg-dark img {
         width: 100%;
         max-width: 300px;

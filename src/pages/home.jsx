@@ -17,7 +17,7 @@ function Home() {
                         <div className="col-sm-6 d-flex d-sm-block flex-column align-items-center">
                             <h2 className="mb-0 text-dark fw-bold"> </h2>
                             <h1 className="mb-5 text-dark fw-bold text-center text-sm-start">
-                                </h1>
+                            </h1>
                         </div>
                     </div>
                 </div>
@@ -111,6 +111,7 @@ function Home() {
                         <div className="col-lg-6 d-flex justify-content-center">
                             <img src={contactImage} className="img-fluid w-50" alt="" />
                         </div>
+
                     </div>
                 </div>
             </div>
