@@ -13,19 +13,19 @@ const alacarte = [
         id: 1,
         name: "Rodizio de frutos do mar",
         description: "camarao a milanesa, bolinho de peixe, casquinha de siri, linguado grelhado, camarão alho e oleo, lula",
-        price: "139,90 adulto 69,90 criança"
+        price: "R$139,90 adulto R$69,90 criança"
     },
     {
         id: 2,
         name: "Combinados",
         description: "Camarão a milanesa e anchova grelhada, camarão a milanesa e tainha grelhada, camarão a milanesa e papa-terra",
-        price: "129,90 2 pessoas"
+        price: "R$129,90 serve 2 pessoas"
     },
     {
         id: 3,
         name: "Peixes",
         description: "Salmão grelhado, Taínha Grelhada, Linguado grelhado, Papa-terra em postas",
-        price: "Salmão Grelhado 95,00 1 pessoa ",
+        price: "Apartir R$52.90 ",
     }
 ]
 
@@ -34,19 +34,19 @@ const aperitivo = [
         id: 1,
         name: "Camarão",
         description: "Aperitivo camarão a milanesa",
-        price: "69,90"
+        price: "R$69,90"
     },
     {
         id: 2,
         name: "Batata frita",
         description: "aperitivo bata frita",
-        price: "25,00"
+        price: "Apartir R$25,00"
     },
     {
         id: 3,
         name: "Casquinha de siri",
         description: "aperitivo casquinha de siri",
-        price: "15,00 unid"
+        price: "R$15,00 unid"
     },
 ]
 
@@ -67,7 +67,7 @@ const dessert = [
         id: 3,
         name: "Mousses",
         description: "Mousses de marcujá, Morango, mamão, limão",
-        price: "Apartir R$16,00"
+        price: "R$15,00"
     },
 ]
 
@@ -76,7 +76,7 @@ const drink = [
         id: 1,
         name: "Sucos",
         description: "Sucos de morango, laranja, limão, ortelã, kiwi",
-        price: "Partir R$9,90"
+        price: "Apartir R$9,90"
     },
     {
         id: 2,
@@ -87,7 +87,7 @@ const drink = [
     {
         id: 3,
         name: "Caipiras",
-        description: "Caipiras de smirnof, bacardi, cachaça",
+        description: "Caipiras de smirnof, steinhaeger, bacardi, cachaça",
         price: "Apartir R$16,00"
     },
 ]
