@@ -40,7 +40,7 @@ const aperitivo = [
         id: 2,
         name: "Batata frita",
         description: "aperitivo bata frita",
-        price: "Apartir R$25,00"
+        price: "R$25,00"
     },
     {
         id: 3,
