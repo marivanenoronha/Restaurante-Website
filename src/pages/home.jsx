@@ -101,7 +101,7 @@ function Home() {
             </div>
             <ImageGallery />
 
-            <div className="bg-dark text-light py-5 shadow">
+            <div className="text-light py-5 shadow">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 d-flex flex-column align-items-center justify-content-center mb-5 mb-lg-o">
@@ -109,7 +109,7 @@ function Home() {
                         </div>
 
                         <div className="col-lg-6 d-flex justify-content-center">
-                            <img src={contactImage} className="img-fluid w-50" alt="" />
+                            <img src={contactImage} className="img-fluid w-52" alt="" />
                         </div>
 
                     </div>

@@ -36,15 +36,9 @@
         height: auto;
     }
 
-    .about-page .bg-dark {
-        padding: 20px;
-    }
-
-    .about-page .my-5 {
-        padding: 0 15px;
-    }
-
     .about-page h1 {
         font-size: 1.8rem;
     }
+
+    
 }
