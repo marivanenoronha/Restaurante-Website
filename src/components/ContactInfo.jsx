@@ -21,7 +21,7 @@ export function ContactInfo() {
                 </div>
             </p>
             <h3 className="mb-2 text-dark">Horário de funcionamento</h3>
-            <p className="m-0 text-dark">Segunda - Domingo  Almoço11:00 - 15:00
+            <p className="m-0 text-dark">Segunda - Domingo  <br></br>Almoço11:00 - 15:00
                 Janta19:00 - 23:00 </p>
         </div >
     )

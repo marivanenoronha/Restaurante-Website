@@ -4,10 +4,6 @@
     height: 50vh;
 }
 
-.contact-page .btn {
-    margin-bottom: 20px;
-}
-
 @media(max-width: 375px) {
 
     .contact-page h1 {
@@ -46,7 +42,6 @@
     
     .contact-page .btn {
         width: 100%;
-        margin-bottom: 20px;
         padding: 10px;
        font-size: 1rem;
     }
