@@ -100,7 +100,6 @@ function Home() {
                 </div>
             </div>
             <ImageGallery />
-
             <div className="text-light py-5 shadow">
                 <div className="container">
                     <div className="row">
