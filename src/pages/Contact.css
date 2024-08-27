@@ -37,6 +37,10 @@
         padding: 10px;
         font-size: 0.9rem;
     }
+
+    .contact-page .map-responsive {
+        height: 390px; 
+    }
     
     .contact-page .btn {
         width: 100%;
