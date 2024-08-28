@@ -8,7 +8,7 @@ import Home from "./pages/home";
 import Menu from "./pages/menu";
 import About from "./pages/about";
 import Contact from "./pages/contact";
-import Logo from "./fotos/img/logo-restaurante.png"
+import Logo from "./fotos/img/logo-restaurante.png";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
       <Navbar expand="1g" className='fixed-top bg-body-tertiary shadow'>
         <Container>
           <Navbar.Brand className="navbar-brand  fw-semibold">
-            <img src={ Logo } width="100" height="50" className="d-inline-block align-top"  alt="Logo do Restaurante" />
+            <a href="/"><img src={ Logo } width="100" height="50" className="d-inline-block align-top"  alt="Logo do Restaurante" /></a>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>

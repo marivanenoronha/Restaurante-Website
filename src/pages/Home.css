@@ -1,6 +1,8 @@
 .home-page header {
-    background-image: url(../fotos/img/about-img.jpg);
+    background-image:  url(../fotos/img/about-img.jpg);
 }
+
+
 
 header {
     background-size: cover;
@@ -34,7 +36,9 @@ header h1 {
     .home-page header {
         text-align: center;
         padding: 20px;
+       
     }
+
 
     .home-page header h1,
     .home-page header h2 {
