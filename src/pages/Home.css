@@ -19,6 +19,25 @@ header h1 {
     text-shadow: 2px 2px 8px #fff;
 }
 
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-left {
+    animation: slideInLeft 1s ease-out;
+}
+
+.slide-in-left:nth-child(2) {
+    animation-delay: 0.3s; 
+}
+
 .menu-section {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../fotos/img//menu-img.jpeg);
     background-size: cover;
@@ -38,7 +57,6 @@ header h1 {
         padding: 20px;
        
     }
-
 
     .home-page header h1,
     .home-page header h2 {
