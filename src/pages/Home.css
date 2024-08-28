@@ -104,6 +104,10 @@ header h1 {
         margin-bottom: 20px;
     }
 
+    .home-page .map-responsive {
+        height: 390px; 
+    }
+
     .home-page .btn {
         width: 100%;
         
