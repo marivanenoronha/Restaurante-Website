@@ -60,7 +60,7 @@ header h1 {
 
     .home-page header h1,
     .home-page header h2 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         margin: 10px 0;
     }
 
@@ -126,7 +126,7 @@ header h1 {
         margin-bottom: 20px;
     }
 
-    .home-page .map-responsive {
+    .home-page .ratio {
         height: 390px; 
     }
 

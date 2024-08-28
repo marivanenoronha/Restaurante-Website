@@ -12,15 +12,15 @@ function Home() {
     return (
         <div className="home-page">
             <header className="h-100 min-vh-100 d-flex align-items-center text-light shadow">
-    <div className="container">
-        <div className="row">
-            <div className="col-sm-6 d-flex d-sm-block flex-column align-items-center">
-                <h2 className="mb-0 text-dark fw-bold slide-in-left">Restaurante e Pesticaria</h2>
-                <h1 className="mb-5 text-dark fw-bold text-center text-sm-start slide-in-left">Camarão e Cia</h1>
-            </div>
-        </div>
-    </div>
-</header>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-sm-6 d-flex d-sm-block flex-column align-items-center">
+                            <h2 className="mb-0 text-dark fw-bold slide-in-left">Restaurante e Pesticaria</h2>
+                            <h1 className="mb-5 text-dark fw-bold text-center text-sm-start slide-in-left">Camarão e Cia</h1>
+                        </div>
+                    </div>
+                </div>
+            </header>
             <div className="container my-3">
                 <div className="row">
                     <div className="col-lg-6 d-flex justify-content-center d-none d-lg-flex">
@@ -112,11 +112,10 @@ function Home() {
                 <div className="row">
                     <div className="col-12 d-flex align-items-left justify-content-center flex-column">
                         <h2>Localização</h2>
-                        <div className="map-responsive">
+                        <div className="ratio ratio-16x9">
                             <iframe
+                                className="embed-responsive-item"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3565.136417862331!2d-49.37183408495774!3d-28.924780882351507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952137d5b9e1f0fd%3A0x4f6a5d5f03af0e39!2sR.%20Caxias%2C%2015%20-%20Morro%20dos%20Conventos%2C%20Ararangu%C3%A1%20-%20SC%2C%2088911-320%2C%20Brazil!5e0!3m2!1spt-BR!2sus!4v1691243027432!5m2!1spt-BR!2sus"
-                                width="100%"
-                                height="450"
                                 allowfullscreen=""
                                 loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade"
