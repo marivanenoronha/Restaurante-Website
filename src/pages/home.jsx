@@ -52,7 +52,6 @@ function Home() {
                                         <p className="fs-3 mx-2">Rodízio de frutos do mar</p>
                                         <p className="fs-3 mx-2 text-success fw-bold"></p>
                                     </li>
-
                                     <li className="d-flex justify-content-between">
                                         <p className="fs-3 mx-2">Salmão grelhado</p>
                                         <p className="fs-3 mx-2 text-success fw-bold"></p>
@@ -77,17 +76,14 @@ function Home() {
                                         <p className="fs-3 mx-2">Caipiras</p>
                                         <p className="fs-3 mx-2 text-success fw-bold"></p>
                                     </li>
-
                                     <li className="d-flex justify-content-between">
                                         <p className="fs-3 mx-2">Sucos naturais</p>
                                         <p className="fs-3 mx-2 text-success fw-bold"></p>
                                     </li>
-
                                     <li className="d-flex justify-content-between">
                                         <p className="fs-3 mx-2">Gin tropical</p>
                                         <p className="fs-3 mx-2 text-success fw-bold"></p>
                                     </li>
-
                                     <li className="d-flex justify-content-between">
                                         <p className="fs-3 mx-2">Coquetel de frutas</p>
                                         <p className="fs-3 mx-2 text-success fw-bold"></p>

@@ -35,7 +35,7 @@ export function Reviews() {
                        <div className="p-4">
                             <CardText>
                                A comida e o atendimento maravilhoso,
-                                com certeza o melhor restaurante de frutos do mar
+                                com certeza o melhor restaurante de frutos do mar.
                             </CardText>
                         </div>
                        </CardBody>
