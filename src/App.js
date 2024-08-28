@@ -40,7 +40,7 @@ function App() {
       </BrowserRouter>
 
       <footer className='bg-body-tertiary'>
-        <p className='p-3 m-o text-center'>2024 Restaurante-Website. Todos os direitos reservados</p>
+        <p className='p-3 m-o text-center'>2024 Restaurante Camarão e cia. Todos os direitos reservados</p>
       </footer>
     </div>
   );
