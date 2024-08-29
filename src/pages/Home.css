@@ -1,5 +1,5 @@
 .home-page header {
-    background-image:  url(../fotos/img/about-img.jpg);
+    background-image: url(../fotos/img/about-img.jpg);
 }
 
 
@@ -16,7 +16,9 @@ header h1 {
 
 .home-page header h1,
 .home-page header h2 {
+    position: relative;
     text-shadow: 2px 2px 8px #fff;
+    bottom: 50px;
 }
 
 @keyframes slideInLeft {
@@ -62,6 +64,10 @@ header h1 {
     .home-page header h2 {
         font-size: 1.8rem;
         margin: 10px 0;
+        position: relative;
+        bottom: 40px;
+        
+
     }
 
     .home-page header .container {

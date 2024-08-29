@@ -14,9 +14,9 @@ function Home() {
             <header className="h-100 min-vh-100 d-flex align-items-center text-light shadow">
                 <div className="container">
                     <div className="row">
-                        <div className="col-sm-6 d-flex d-sm-block flex-column align-items-center">
-                            <h2 className="mb-0 text-dark fw-bold slide-in-left">Restaurante e Pesticaria</h2>
-                            <h1 className="mb-5 text-dark fw-bold text-center text-sm-start slide-in-left">Camarão e Cia</h1>
+                        <div className="col-sm-6 d-flex d-sm-block flex-column align-items-left">
+                            <h2 className="mb-0 text-dark fw-bold slide-in-left" >Restaurante e Petiscaria</h2>
+                            <h1 className="mb-5 text-primary fw-bold text-center text-sm-start slide-in-left"><span style={{ color: "orange" }}>Camarão e</span> Cia</h1>
                         </div>
                     </div>
                 </div>
