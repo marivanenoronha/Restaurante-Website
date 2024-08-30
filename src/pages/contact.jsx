@@ -20,44 +20,42 @@ function Contact() {
                         <ContactInfo />
                     </div>
                     <div className="col-lg-6 d-flex justify-content-center">
-                        <Form action="https://api.staticforms.xyz/submit" method="POST">
-                                <input type="hidden" name="accessKey" value="552d9b19-0434-44b2-a666-e0c9037b5a77" />
-                                <input type="hidden" name="redirectTo" value="https://restaurante-website-steel.vercel.app/home.jsx"></input>
-                                <Form.Group className="row mb-6">
-                                    <div className="col-md-6">
-                                        <Form.Label htmlFor="Primeiro-nome" className="text-dark" >Primeiro nome</Form.Label>
-                                        <Form.Control type="text" id="primeiro-nome" />
-                                    </div>
-                                    <div className="col-md-6">
-                                        <Form.Label htmlFor="segundo-nome" className="text-dark">Segundo nome</Form.Label>
-                                        <Form.Control type="text" id="segundo-nome" />
-                                    </div>
-                                </Form.Group>
-                                <Form.Group className="row mb-6">
-                                    <div className="col-md-6">
-                                        <Form.Label htmlFor="email" className="text-dark" >E-mail</Form.Label>
-                                        <Form.Control type="text" id="email" />
-                                    </div>
-                                    <div className="col-md-6">
-                                        <Form.Label htmlFor="numero-telefone" className="text-dark" >Número telefone</Form.Label>
-                                        <Form.Control type="text" id="numero-telefone" />
-                                    </div>
-                                </Form.Group>
-                                <Form.Group className="row mb-6">
-                                    <div className="col-md-6">
-                                        <Form.Label htmlFor="date" className="text-dark">Data</Form.Label>
-                                        <Form.Control type="date" id="date" />
-                                    </div>
-                                    <div className="col-md-6">
-                                        <Form.Label htmlFor="guests-number" className="text-dark" >Número de convidados</Form.Label>
-                                        <Form.Control type="number" id="guests-number" />
-                                    </div>
-                                </Form.Group>
-                                <Form.Group className="mb-4">
-                                    <Form.Label htmlFor="comments" className="text-dark">Comentarios</Form.Label>
-                                    <Form.Control type="textarea" id="comments" />
-                                </Form.Group>
-                                <button type="submit" className="btn bg-dark text-white btn-lg">Enviar</button>
+                        <Form >
+                            <Form.Group className="row mb-6">
+                                <div className="col-md-6">
+                                    <Form.Label htmlFor="Primeiro-nome" className="text-dark" >Primeiro nome</Form.Label>
+                                    <Form.Control type="text" id="primeiro-nome" />
+                                </div>
+                                <div className="col-md-6">
+                                    <Form.Label htmlFor="segundo-nome" className="text-dark">Segundo nome</Form.Label>
+                                    <Form.Control type="text" id="segundo-nome" />
+                                </div>
+                            </Form.Group>
+                            <Form.Group className="row mb-6">
+                                <div className="col-md-6">
+                                    <Form.Label htmlFor="email" className="text-dark" >E-mail</Form.Label>
+                                    <Form.Control type="text" id="email" />
+                                </div>
+                                <div className="col-md-6">
+                                    <Form.Label htmlFor="numero-telefone" className="text-dark" >Número telefone</Form.Label>
+                                    <Form.Control type="text" id="numero-telefone" />
+                                </div>
+                            </Form.Group>
+                            <Form.Group className="row mb-6">
+                                <div className="col-md-6">
+                                    <Form.Label htmlFor="date" className="text-dark">Data</Form.Label>
+                                    <Form.Control type="date" id="date" />
+                                </div>
+                                <div className="col-md-6">
+                                    <Form.Label htmlFor="guests-number" className="text-dark" >Número de convidados</Form.Label>
+                                    <Form.Control type="number" id="guests-number" />
+                                </div>
+                            </Form.Group>
+                            <Form.Group className="mb-4">
+                                <Form.Label htmlFor="comments" className="text-dark">Comentarios</Form.Label>
+                                <Form.Control type="textarea" id="comments" />
+                            </Form.Group>
+                            <button type="submit" className="btn bg-dark text-white btn-lg">Enviar</button>
                         </Form>
 
                     </div>
