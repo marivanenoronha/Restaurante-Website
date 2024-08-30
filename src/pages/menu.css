@@ -1,7 +1,26 @@
 .menu-page header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url(../fotos//img/menu-img.jpeg);
+        url(../fotos//img/menu.img.png);
     height: 50vh;
+}
+
+@keyframes slideInDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-down {
+    animation: slideInDown 1s ease-out;
+}
+
+.slide-in-top {
+    animation: slideInTop 1s ease-out;
 }
 
 @media (max-width: 375px) {

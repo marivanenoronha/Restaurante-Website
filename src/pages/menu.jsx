@@ -98,13 +98,13 @@ function Menu() {
         <div className="menu-page">
             <header className="mt-5">
                 <div className="container h-100 d-flex align-items-center justify-content-center">
-                    <h1 className="text-light">Cardápio</h1>
+                    <h1 className="text-light slide-in-down">Cardápio</h1>
                 </div>
             </header>
 
             <div className="alacarte text-light py-5">
                 <div className="container">
-                    <h2 className="text-center fs-1 mb-4 mb-lg-5 text-uppercase fw-bold text-dark">Á la Carte</h2>
+                    <h2 className="text-center fs-1 mb-4 mb-lg-5 text-uppercase fw-bold text-primary">Á la Carte</h2>
                     <div className="row ">
                         <div className="col-lg-6 d-flex justify-content-center">
                             <img src={AlacarteImg} className="img-fluid w-80 mt-4 mt-lg-0" alt="" />
@@ -114,13 +114,13 @@ function Menu() {
                                 <div key={item.id}>
                                     <Card className="border-0">
                                         <CardBody>
-                                            <CardTitle className="text-center fs-3">
+                                            <CardTitle className="text-center fs-3 text-primary">
                                                 {item.name}
                                             </CardTitle>
                                             <CardText className="text-center fs-5">
                                                 {item.description}
                                             </CardText>
-                                            <CardText className="text-center fs-5 fw-bold text-dark">
+                                            <CardText className="text-center fs-5 fw-bold text-primary">
                                                 {item.price}
                                             </CardText>
                                         </CardBody>
@@ -135,20 +135,20 @@ function Menu() {
 
             <div className="aperitivo  bg-dark text-light my-5">
                 <div className="container">
-                    <h2 className="text-center fs-1 mb-4 mb-lg-5 text-uppercase fw-bold text-white">Aperitivos</h2>
+                    <h2 className="text-center fs-1 mb-4 mb-lg-5 text-uppercase fw-bold text- " style={{ color: "orange" }}>Aperitivos</h2>
                     <div className="row ">
                         <div className="col-lg-6 d-flex flex-column justify-content-around">
                             {aperitivo.map((item) => (
                                 <div key={item.id}>
                                     <Card className="border-0">
                                         <CardBody>
-                                            <CardTitle className="text-center fs-3">
+                                            <CardTitle className="text-center fs-3" style={{ color: "orange" }}>
                                                 {item.name}
                                             </CardTitle>
                                             <CardText className="text-center fs-5">
                                                 {item.description}
                                             </CardText>
-                                            <CardText className="text-center fs-5 fw-bold text-dark">
+                                            <CardText className="text-center fs-5 fw-bold "  style={{ color: "orange" }}>
                                                 {item.price}
                                             </CardText>
                                         </CardBody>
@@ -164,7 +164,7 @@ function Menu() {
             </div>
             <div className="aperitivo   my-5">
                 <div className="container">
-                    <h2 className="text-center fs-1 mb-4 mb-lg-5 text-uppercase fw-bold text-dark">Sobremesas</h2>
+                    <h2 className="text-center fs-1 mb-4 mb-lg-5 text-uppercase fw-bold text-primary">Sobremesas</h2>
                     <div className="row ">
                         <div className="col-lg-6 d-flex justify-content-center">
                             <img src={DessertImg} className="img-fluid w-80 mt-4 mt-lg-0" alt="" />
@@ -174,13 +174,13 @@ function Menu() {
                                 <div key={item.id}>
                                     <Card className="border-0">
                                         <CardBody>
-                                            <CardTitle className="text-center fs-3">
+                                            <CardTitle className="text-center fs-3 text-primary">
                                                 {item.name}
                                             </CardTitle>
                                             <CardText className="text-center fs-5">
                                                 {item.description}
                                             </CardText>
-                                            <CardText className="text-center fs-5 fw-bold text-dark">
+                                            <CardText className="text-center fs-5 fw-bold text-primary">
                                                 {item.price}
                                             </CardText>
                                         </CardBody>
@@ -193,20 +193,20 @@ function Menu() {
             </div>
             <div className="drink bg-dark  my-5">
                 <div className="container">
-                    <h2 className="text-center fs-1 mb-4 mb-lg-5 text-uppercase fw-bold text-white">Bebidas</h2>
+                    <h2 className="text-center fs-1 mb-4 mb-lg-5 text-uppercase fw-bold " style={{ color: "orange" }}>Bebidas</h2>
                     <div className="row ">
                         <div className="col-lg-6 d-flex flex-column justify-content-around">
                             {drink.map((item) => (
                                 <div key={item.id}>
                                     <Card className="border-0">
                                         <CardBody>
-                                            <CardTitle className="text-center fs-3">
+                                            <CardTitle className="text-center fs-3" style={{ color: "orange" }}>
                                                 {item.name}
                                             </CardTitle>
                                             <CardText className="text-center fs-5">
                                                 {item.description}
                                             </CardText>
-                                            <CardText className="text-center fs-5 fw-bold text-dark">
+                                            <CardText className="text-center fs-5 fw-bold " style={{ color: "orange" }}>
                                                 {item.price}
                                             </CardText>
                                         </CardBody>
