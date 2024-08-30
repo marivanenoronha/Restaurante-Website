@@ -11,7 +11,7 @@ import contactImage from "../fotos/img/contact-img.jpg";
 function Home() {
     return (
         <div className="home-page">
-            <header className="h-100 min-vh-100 d-flex align-items-center text-light shadow">
+            <header className="h-100 min-vh-100 d-flex align-items-center text-light ">
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-6 d-flex d-sm-block flex-column align-items-left">
