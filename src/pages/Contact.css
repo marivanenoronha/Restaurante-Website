@@ -16,27 +16,6 @@
         font-size: 12px;
         margin-top: 15px;
     }
-    
-    .contact-page form .row {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-    
-    .contact-page form .row .col-md-6 {
-        width: 100%;
-        
-    }
-    
-    .contact-page form .row .col-md-6 label {
-        font-size: 0.9rem;
-    }
-    
-    .contact-page form .row .col-md-6 input,
-    .contact-page form .row .col-md-6 textarea {
-        padding: 10px;
-        font-size: 0.9rem;
-    }
 
     .contact-page .ratio {
         height: 390px; 

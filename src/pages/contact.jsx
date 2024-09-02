@@ -1,10 +1,13 @@
 import React from "react";
 import "./Contact.css";
 import { ContactInfo } from "../components/ContactInfo";
-import { Form } from "react-bootstrap";
+
 import { Reviews } from "../components/Reviews";
+import contactImage from "../fotos/img/contact-img.jpg";
+
 
 function Contact() {
+
     return (
         <div className="contact-page">
             <header className="mt-5">
@@ -20,45 +23,9 @@ function Contact() {
                         <ContactInfo />
                     </div>
                     <div className="col-lg-6 d-flex justify-content-center">
-                        <Form >
-                            <Form.Group className="row mb-6">
-                                <div className="col-md-6">
-                                    <Form.Label htmlFor="Primeiro-nome" className="text-dark" >Primeiro nome</Form.Label>
-                                    <Form.Control type="text" id="primeiro-nome" />
-                                </div>
-                                <div className="col-md-6">
-                                    <Form.Label htmlFor="segundo-nome" className="text-dark">Segundo nome</Form.Label>
-                                    <Form.Control type="text" id="segundo-nome" />
-                                </div>
-                            </Form.Group>
-                            <Form.Group className="row mb-6">
-                                <div className="col-md-6">
-                                    <Form.Label htmlFor="email" className="text-dark" >E-mail</Form.Label>
-                                    <Form.Control type="text" id="email" />
-                                </div>
-                                <div className="col-md-6">
-                                    <Form.Label htmlFor="numero-telefone" className="text-dark" >Número telefone</Form.Label>
-                                    <Form.Control type="text" id="numero-telefone" />
-                                </div>
-                            </Form.Group>
-                            <Form.Group className="row mb-6">
-                                <div className="col-md-6">
-                                    <Form.Label htmlFor="date" className="text-dark">Data</Form.Label>
-                                    <Form.Control type="date" id="date" />
-                                </div>
-                                <div className="col-md-6">
-                                    <Form.Label htmlFor="guests-number" className="text-dark" >Número de convidados</Form.Label>
-                                    <Form.Control type="number" id="guests-number" />
-                                </div>
-                            </Form.Group>
-                            <Form.Group className="mb-4">
-                                <Form.Label htmlFor="comments" className="text-dark">Comentarios</Form.Label>
-                                <Form.Control type="textarea" id="comments" />
-                            </Form.Group>
-                            <button type="submit" className="btn bg-dark text-white btn-lg">Enviar</button>
-                        </Form>
+                            <img src={contactImage} className="img-fluid w-52" alt="" />
+                        </div>
 
-                    </div>
                     <div className="container my-5">
                         <div className="row">
                             <div className="col-12 d-flex align-items-left justify-content-center flex-column">
