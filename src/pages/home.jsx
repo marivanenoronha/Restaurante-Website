@@ -16,7 +16,7 @@ function Home() {
                     <div className="row">
                         <div className="col-sm-6 d-flex d-sm-block flex-column align-items-left">
                             <h2 className="mb-0 text-dark fw-bold slide-in-left" >Restaurante e Petiscaria</h2>
-                            <h1 className="mb-5 text-primary fw-bold text-center text-sm-start slide-in-left">Mundo<span style={{ color: "orange" }}> do Camarao</span></h1>
+                            <h1 className="mb-5 text-primary fw-bold text-center text-sm-start slide-in-left">Camarão e<span style={{ color: "orange" }}></span> Cia</h1>
                         </div>
                     </div>
                 </div>
