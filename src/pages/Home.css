@@ -20,6 +20,12 @@ header h1 {
     text-shadow: 2px 2px 8px #fff;
 }
 
+.whatsapp-icon {
+    bottom: 20px;
+    right: 70px;
+    z-index: 100;
+}
+
 @keyframes slideInLeft {
     0% {
         transform: translateX(-100%);

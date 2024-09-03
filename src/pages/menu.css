@@ -4,6 +4,12 @@
     height: 50vh;
 }
 
+.whatsapp-icon {
+    bottom: 20px;
+    right: 70px;
+    z-index: 100;
+}
+
 @keyframes slideInDown {
     0% {
         transform: translateY(-100%);

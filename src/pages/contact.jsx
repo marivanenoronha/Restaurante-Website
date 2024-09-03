@@ -47,6 +47,14 @@ function Contact() {
             <div className=" text-light bg-dark py-5">
                 <Reviews />
             </div>
+            <a
+                href="https://wa.me/5548991740401"
+                className="whatsapp-icon position-fixed"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <i className="fab fa-whatsapp fa-3x text-success"></i>
+            </a>
         </div>
     )
 }

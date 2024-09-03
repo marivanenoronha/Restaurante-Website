@@ -16,7 +16,7 @@ function Home() {
                     <div className="row">
                         <div className="col-sm-6 d-flex d-sm-block flex-column align-items-left">
                             <h2 className="mb-0 text-dark fw-bold slide-in-left" >Restaurante e Petiscaria</h2>
-                            <h1 className="mb-5 text-primary fw-bold text-center text-sm-start slide-in-left">Camarão e<span style={{ color: "orange" }}></span> Cia</h1>
+                            <h1 className="mb-5 text-primary fw-bold text-center text-sm-start slide-in-left"><span style={{ color: "orange" }}>Camarão e</span> Cia</h1>
                         </div>
                     </div>
                 </div>
@@ -124,6 +124,15 @@ function Home() {
                     </div>
                 </div>
             </div>
+
+            <a
+                href="https://wa.me/5548991740401"
+                className="whatsapp-icon position-fixed"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <i className="fab fa-whatsapp fa-3x text-success"></i>
+            </a>
         </div>
     )
 }
