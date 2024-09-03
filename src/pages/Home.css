@@ -180,17 +180,17 @@ header h1 {
 
     }
 
-    .whatsapp-container {
-       bottom: 5px;
-        right: 10px; 
+    .home-page .whatsapp-container {
+       bottom: 20px;
+        right: 20px; 
     }
 
-    .welcome-message {
-        font-size: 12px; 
+    .home-page .welcome-message {
+        font-size: 10px; 
     }
 
-    .whatsapp-icon {
-        font-size: 20px;
+    .home-page .whatsapp-icon {
+        font-size: 18px;
     }
 
   
