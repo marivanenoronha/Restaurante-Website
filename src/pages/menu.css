@@ -4,6 +4,34 @@
     height: 50vh;
 }
 
+.menu-page .whatsapp-container {
+    position: fixed;
+    bottom: 130px;
+    right: 20px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+}
+
+.menu-page .whatsapp-icon {
+    font-size: 24px;
+    margin-left: 10px;
+    z-index: 100;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.welcome-message {
+    animation: fadeOut 1s ease-in-out 5s forwards;
+}
 
 
 
@@ -71,6 +99,19 @@
     .menu-page .card-text {
         font-size: 1rem;
     }
+
+    .menu-page .whatsapp-container {
+        bottom: 225px;
+         right: 10px; 
+     }
+ 
+     .menu-page .welcome-message {
+         font-size: 10px; 
+     }
+ 
+     .menu-page .whatsapp-icon {
+         font-size: 18px;
+     }
 
    
 }
