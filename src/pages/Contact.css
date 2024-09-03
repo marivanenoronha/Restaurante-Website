@@ -4,7 +4,7 @@
     height: 50vh;
 }
 
-.whatsapp-container {
+.contact-page .whatsapp-container {
     position: fixed;
     bottom: 130px;
     right: 20px;
@@ -13,7 +13,7 @@
     align-items: center;
 }
 
-.whatsapp-icon {
+.contact-page .whatsapp-icon {
     font-size: 24px;
     margin-left: 10px;
     z-index: 100;
@@ -56,16 +56,16 @@
        font-size: 1rem;
     }
 
-    .whatsapp-container {
-        bottom: 230px;
+    .contact-page .whatsapp-container {
+        bottom: 220px;
          right: 10px; 
      }
  
-     .welcome-message {
-         font-size: 10px; 
+     .contact-page .welcome-message {
+         font-size: 8px; 
      }
  
-     .whatsapp-icon {
+     .contact-page .whatsapp-icon {
          font-size: 18px;
      }
  
