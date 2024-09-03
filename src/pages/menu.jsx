@@ -1,5 +1,6 @@
 import React from "react";
 import "./menu.css";
+import { useState, useEffect } from 'react';
 import { Card, CardBody, CardText, CardTitle } from "react-bootstrap";
 import AlacarteImg from "../fotos/img/menu-alacarte.jpg";
 import AperitivoImg from "../fotos/img/dessert.jpg";
@@ -94,6 +95,17 @@ const drink = [
 
 
 function Menu() {
+
+    const [showWelcomeMessage, setShowWelcomeMessage] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setShowWelcomeMessage(false);
+        }, 2000);
+
+        return () => clearTimeout(timer);
+    }, []);
+
     return (
         <div className="menu-page">
             <header className="mt-5">
@@ -220,14 +232,19 @@ function Menu() {
                     </div>
                 </div>
             </div>
-            <a
-                href="https://wa.me/5548991740401"
-                className="whatsapp-icon position-fixed"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                <i className="fab fa-whatsapp fa-3x text-success"></i>
-            </a>
+            <div className="whatsapp-container position-fixed d-flex align-items-center">
+                {showWelcomeMessage && (
+                    <span className="text-light bg-success p-2 rounded">Faça sua reseva</span>
+                )}
+                <a
+                    href="https://api.whatsapp.com/send?phone=SEU_NUMERO&text=Olá!%20Gostaria%20de%20saber%20mais%20informações."
+                    className="whatsapp-icon ms-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <i className="fab fa-whatsapp fa-3x text-success"></i>
+                </a>
+            </div>
         </div>
     )
 }

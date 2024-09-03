@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import  { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import "./Home.css";
 import { MenuBtn } from "../components/menu.Btn";
 import AboutImg from "../fotos/img/about-chef2.jpg";
@@ -16,7 +16,7 @@ function Home() {
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowWelcomeMessage(false);
-        }, 2000); 
+        }, 2000);
 
         return () => clearTimeout(timer);
     }, []);
@@ -136,7 +136,6 @@ function Home() {
                     </div>
                 </div>
             </div>
-
             <div className="whatsapp-container position-fixed d-flex align-items-center">
                 {showWelcomeMessage && (
                     <span className="text-light bg-success p-2 rounded">Faça sua reseva</span>
@@ -150,7 +149,7 @@ function Home() {
                     <i className="fab fa-whatsapp fa-3x text-success"></i>
                 </a>
             </div>
-        
+
         </div>
     )
 }

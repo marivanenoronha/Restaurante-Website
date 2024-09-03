@@ -1,5 +1,6 @@
 import React from "react";
 import "./Contact.css";
+import { useState, useEffect } from 'react';
 import { ContactInfo } from "../components/ContactInfo";
 
 import { Reviews } from "../components/Reviews";
@@ -7,6 +8,16 @@ import contactImage from "../fotos/img/contact-img.jpg";
 
 
 function Contact() {
+
+    const [showWelcomeMessage, setShowWelcomeMessage] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setShowWelcomeMessage(false);
+        }, 2000);
+
+        return () => clearTimeout(timer);
+    }, []);
 
     return (
         <div className="contact-page">
@@ -47,14 +58,19 @@ function Contact() {
             <div className=" text-light bg-dark py-5">
                 <Reviews />
             </div>
-            <a
-                href="https://wa.me/5548991740401"
-                className="whatsapp-icon position-fixed"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                <i className="fab fa-whatsapp fa-3x text-success"></i>
-            </a>
+            <div className="whatsapp-container position-fixed d-flex align-items-center">
+                    {showWelcomeMessage && (
+                        <span className="text-light bg-success p-2 rounded">Faça sua reseva</span>
+                    )}
+                    <a
+                        href="https://api.whatsapp.com/send?phone=SEU_NUMERO&text=Olá!%20Gostaria%20de%20saber%20mais%20informações."
+                        className="whatsapp-icon ms-2"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i className="fab fa-whatsapp fa-3x text-success"></i>
+                    </a>
+                </div>
         </div>
     )
 }
