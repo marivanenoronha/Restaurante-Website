@@ -46,13 +46,6 @@
     }
 }
 
-.slide-in-down {
-    animation: slideInDown 1s ease-out;
-}
-
-.slide-in-top {
-    animation: slideInTop 1s ease-out;
-}
 
 @media (max-width: 375px) {
     .menu-page .container {
@@ -60,8 +53,15 @@
     }
 
     .menu-page header h1 {
+        font-size: 1.9rem;
+        text-align: center;
+    }
+
+    .menu-page  h2 {
+        position: relative;
         font-size: 1.8rem;
         text-align: center;
+        top: 10px;
     }
 
     .menu-page .alacarte img,

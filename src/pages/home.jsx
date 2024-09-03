@@ -39,7 +39,7 @@ function Home() {
                         <img src={AboutImg} className="img-fluid w-52" alt="about img" />
                     </div>
                     <div className="col-lg d-flex flex-column align-items-center justify-content-center">
-                        <h2 className="fs-1 mb-5 text-uppercase fw-bold">Sobre nós</h2>
+                        <h2 className="fs-1 mb-5 text-uppercase fw-bold ">Sobre nós</h2>
                         <p>Restaurante especializado em frutos do mar, sempre com produtos e
                             ingredientes fresquinhos, selecionados por quem entende do assunto.</p>
                         <p className="mb-5">O almoço inclui camarão alho e óleo, camarão empanado, casquinha de siri, bolinho de peixe,

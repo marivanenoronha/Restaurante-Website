@@ -4,6 +4,14 @@
     height: 50vh;
 }
 
+.slide-in-down {
+    animation: slideInDown 1s ease-out;
+}
+
+.slide-in-top {
+    animation: slideInTop 1s ease-out;
+}
+
 .about-page .whatsapp-container {
     position: fixed;
     bottom: 130px;

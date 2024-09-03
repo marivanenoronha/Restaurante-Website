@@ -22,7 +22,7 @@ function About() {
         <div className="about-page">
             <header className="mt-5">
                 <div className="container h-100 d-flex align-items-center justify-content-center">
-                    <h1 className="text-light">Sobre nós</h1>
+                    <h1 className="text-light slide-in-down">Sobre nós</h1>
                 </div>
             </header>
             <div className="container my-5">
