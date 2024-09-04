@@ -60,7 +60,7 @@ function Contact() {
             </div>
             <div className="whatsapp-container position-fixed d-flex align-items-center">
                     {showWelcomeMessage && (
-                        <span className="text-light bg-success p-2 rounded">Faça sua reseva</span>
+                        <span className="text-light bg-success p-2 rounded">Faça sua reserva</span>
                     )}
                     <a
                         href="https://api.whatsapp.com/send?phone=SEU_NUMERO&text=Olá!%20Gostaria%20de%20saber%20mais%20informações."
