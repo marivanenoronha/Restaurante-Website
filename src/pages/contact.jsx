@@ -2,9 +2,7 @@ import React from "react";
 import "./Contact.css";
 import { useState, useEffect } from 'react';
 import { ContactInfo } from "../components/ContactInfo";
-
 import { Reviews } from "../components/Reviews";
-import contactImage from "../fotos/img/contact-img.jpg";
 
 
 function Contact() {
@@ -30,12 +28,6 @@ function Contact() {
 
             <div className="  container my-5">
                 <div className="row">
-                    <div className=" col-lg-6 d-flex flex-column align-items-center justify-content-center mb-5 mb-lg-o">
-                        <ContactInfo />
-                    </div>
-                    <div className="col-lg-6 d-flex justify-content-center">
-                            <img src={contactImage} className="img-fluid w-52" alt="" />
-                        </div>
 
                     <div className="container my-5">
                         <div className="row">
@@ -55,9 +47,10 @@ function Contact() {
                     </div>
                 </div>
             </div>
-            <div className=" text-light bg-dark py-5">
+            <div className=" text-dark py-5">
                 <Reviews />
             </div>
+            <ContactInfo />
             <div className="whatsapp-container position-fixed d-flex align-items-center">
                     {showWelcomeMessage && (
                         <span className="text-light bg-success p-2 rounded">Faça sua reserva</span>

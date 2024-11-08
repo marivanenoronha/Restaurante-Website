@@ -6,7 +6,7 @@ import { MenuBtn } from "../components/menu.Btn";
 import AboutImg from "../fotos/img/about-chef2.jpg";
 import { ImageGallery } from "../components/imageGalery";
 import { ContactInfo } from "../components/ContactInfo";
-import contactImage from "../fotos/img/contact-img.jpg";
+import { Reviews } from "../components/Reviews";
 
 
 function Home() {
@@ -107,18 +107,8 @@ function Home() {
                 </div>
             </div>
             <ImageGallery />
-            <div className="text-light py-5 shadow">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-6 d-flex flex-column align-items-center justify-content-center mb-5 mb-lg-o">
-                            <ContactInfo />
-                        </div>
-
-                        <div className="col-lg-6 d-flex justify-content-center">
-                            <img src={contactImage} className="img-fluid w-52" alt="" />
-                        </div>
-                    </div>
-                </div>
+            <div className=" text-dark py-5">
+                <Reviews />
             </div>
             <div className="container my-5">
                 <div className="row">
@@ -149,6 +139,7 @@ function Home() {
                     <i className="fab fa-whatsapp fa-3x text-success"></i>
                 </a>
             </div>
+            <ContactInfo />
 
         </div>
     )
