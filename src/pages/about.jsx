@@ -53,9 +53,7 @@ function About() {
             <div className="bg-dark text-light">
                 <ImageGallery />
             </div>
-            <div className="my-5">
-                <Reviews />
-            </div>
+            <Reviews />
             <div className="container my-5">
                 <div className="row">
                     <div className="col-12 d-flex align-items-left justify-content-center flex-column">
