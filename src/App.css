@@ -4,4 +4,29 @@
   font-size: 1.14rem; 
 }
 
+.toggle-btn .navbar-toggler-icon {
+  padding: 0.5rem;
+}
+
+@media (max-width: 475px) {
+
+  .toggle-btn {
+    margin-right: 15px; 
+}
+  .navbar-collapse {
+    text-align: left;
+  }
+  .navbar .nav-link {
+    font-size: 0.80rem;
+    text-align: left;
+    padding-left: 0.5rem; 
+    padding-right: 0;
+    width: 100%; 
+  }
+  .ms-auto .nav-link {
+    font-size: 0.85rem !important; 
+  }
+}
+
+
 
