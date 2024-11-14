@@ -2,6 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from 'react';
 import "./Home.css";
+import { Card, CardBody, CardText, CardTitle } from "react-bootstrap";
+import Image1 from "../fotos/img/gallery7.jpg";
+import Image2 from "../fotos/img/gallery2.jpg";
+import Image3 from "../fotos/img/drink-img.jpg";
 import { MenuBtn } from "../components/menu.Btn";
 import AboutImg from "../fotos/img/about-chef2.jpg";
 import { ImageGallery } from "../components/imageGalery";
@@ -21,6 +25,30 @@ function Home() {
         return () => clearTimeout(timer);
     }, []);
 
+
+
+    const alacarte = [
+        {
+            id: 1,
+            category: "frutos do mar",
+            name: "Frutos do mar",
+            description: "Camarao a milanesa, Ridizio de frutos do mar, ensopado de camarão"
+        },
+        {
+            id: 2,
+            category: "peixes",
+            name: "Peixes",
+            description: "Salmão grelhado, Linguado belle meuniere, taínha grelhada"
+        },
+        {
+            id: 3,
+            category: "drinks",
+            name: "Drinks",
+            description: "Caipiras, Aperol spritz, Sensação tropical, Negroni  "
+        },
+
+    ]
+
     return (
         <div className="home-page">
             <header className="h-100 min-vh-100 d-flex align-items-center text-light">
@@ -28,81 +56,105 @@ function Home() {
                     <div className="row">
                         <div className="col-sm-6 d-flex d-sm-block flex-column align-items-left">
                             <h2 className="mb-0 text-dark fw-bold slide-in-left" >Restaurante e Petiscaria</h2>
-                            <h1 className="mb-5 text-primary fw-bold text-center text-sm-start slide-in-left"><span style={{ color: "orange" }}>Camarão e</span> Cia</h1>
+                            <h1 className="mb-5 text-primary fw-bold text-center text-sm-start slide-in-left"><span style={{ color: "#fd7e14" }}>Camarão e</span> Cia</h1>
                         </div>
                     </div>
                 </div>
             </header>
-            <div className="container my-3">
+            <div className="container py-5">
                 <div className="row">
-                    <div className="col-lg-6 d-flex justify-content-center d-none d-lg-flex">
-                        <img src={AboutImg} className="img-fluid w-52" alt="about img" />
-                    </div>
                     <div className="col-lg d-flex flex-column align-items-center justify-content-center">
-                        <h2 className="fs-1 mb-5 text-uppercase fw-bold ">Sobre nós</h2>
-                        <p>Restaurante especializado em frutos do mar, sempre com produtos e
-                            ingredientes fresquinhos, selecionados por quem entende do assunto.</p>
-                        <p className="mb-5">O almoço inclui camarão alho e óleo, camarão empanado, casquinha de siri, bolinho de peixe,
-                            isca de peixe, lula empanada, risoto de camarão, pirão de peixe,
-                            filé de peixe empanado, peixe frito, salada e fritas.
-                        </p>
-                        <Link to="/about">
-                            <button type="button" className="btn btn-outline-dark btn-lg">Mais sobre nós</button>
-                        </Link>
+                        <h2 className="fs-3 mb-5 text-uppercase fw-bold">Conheça nossa história</h2>
+                        <p>Restaurante especializado em frutos do mar, sempre com produtos e ingredientes fresquinhos, selecionados por quem entende do assunto.</p>
+                        <p className="mb-5"> No Restaurante e Petiscaria Camarão e Cia, nosso cardápio variado é elaborado com critério e zelo.
+                            Complementamos sua experiência gastronômica com uma seleção de vinhos nacionais e importados, mantidos
+                            em adega climatizada. Também oferecemos coquetéis exclusivos e sobremesas irresistíveis, tornando sua
+                            visita memorável do começo ao fim.</p>
+
+                    </div>
+                    <div className="col-lg-6 d-flex justify-content-center position-relative  d-lg-flex zoom">
+                        <img src={AboutImg} className="main-img img-fluid" alt="Sobre nós imagem 1" />
+                        <img src={Image2} className="img-fluid position-absolute overlay-img overlay-img-left" alt="Sobre nós imagem 2" />
+                        <img src={Image3} className="img-fluid position-absolute overlay-img overlay-img-right" alt="Sobre nós imagem 3" />
                     </div>
                 </div>
+            </div>
 
-                <div className="menu-section py-5 text-light shadow">
-                    <div className="container d-flex flex-column align-items-center">
-                        <h2 className="fs-1 mb-5 text-uppercase fw-bold">Nossos favoritos</h2>
-                        <div className="row mb-5 w-100">
-                            <div className="col-lg d-flex flex-column align-items-center mb-5 mb-lg-0">
-                                <h3 className="fs-2 mb-5">Pratos</h3>
-                                <ul className="px-0">
-                                    <li className="d-flex justify-content-between">
-                                        <p className="fs-3 mx-2">Rodízio de frutos do mar</p>
-                                        <p className="fs-3 mx-2 text-success fw-bold"></p>
-                                    </li>
-                                    <li className="d-flex justify-content-between">
-                                        <p className="fs-3 mx-2">Salmão grelhado</p>
-                                        <p className="fs-3 mx-2 text-success fw-bold"></p>
-                                    </li>
+            <div className="container my-4 zoom-group">
+                <div className="row position-relative">
+                    
+                </div>
+            </div>
+            <div className="container my-5">
+                <div className="alacarte text-light py-5">
+                    <div className="container">
+                        <div className="row flex-column flex-lg-row">
+                            <div className="col-lg-8 d-flex flex-column justify-content-around">
+                                <h2 className="text-center fs-2 mb-4 mb-lg-5  text-light">Alguns de nossos pratos e drinks</h2>
+                                <div className="menu-group">
+                                    {alacarte.filter(item => item.category === 'frutos do mar').map((item) => (
+                                        <Card className="border-0" key={item.id}>
+                                            <CardBody>
+                                                <CardTitle className="text-center fs-4 text-light">
+                                                    {item.name}
+                                                </CardTitle>
+                                                <CardText className="text-center fs-5">
+                                                    {item.description}
+                                                </CardText>
 
-                                    <li className="d-flex justify-content-between">
-                                        <p className="fs-3 mx-2">Camarão a milanesa</p>
-                                        <p className="fs-3 mx-2 text-success fw-bold"></p>
-                                    </li>
+                                            </CardBody>
+                                        </Card>
+                                    ))}
+                                    <img src={Image1} className="img-fluid mb-3 w-100 d-lg-none rounded" alt="Frutos do Mar Image" />
+                                </div>
 
-                                    <li className="d-flex justify-content-between">
-                                        <p className="fs-3 mx-2">Camarão a parmegiana</p>
-                                        <p className="fs-3 mx-2 text-success fw-bold"></p>
-                                    </li>
-                                </ul>
+
+                                <div className="menu-group">
+                                    {alacarte.filter(item => item.category === 'peixes').map((item) => (
+                                        <Card className="border-0" key={item.id}>
+                                            <CardBody>
+                                                <CardTitle className="text-center fs-4 text-light">
+                                                    {item.name}
+                                                </CardTitle>
+                                                <CardText className="text-center fs-5">
+                                                    {item.description}
+                                                </CardText>
+
+                                            </CardBody>
+                                        </Card>
+                                    ))}
+                                    <img src={Image2} className="img-fluid mb-3 w-100 d-lg-none rounded" alt="Peixes Image" />
+                                </div>
+
+
+                                <div className="menu-group">
+                                    {alacarte.filter(item => item.category === 'drinks').map((item) => (
+                                        <Card className="border-0" key={item.id}>
+                                            <CardBody>
+                                                <CardTitle className="text-center fs-4 text-light">
+                                                    {item.name}
+                                                </CardTitle>
+                                                <CardText className="text-center fs-5">
+                                                    {item.description}
+                                                </CardText>
+                                            </CardBody>
+                                        </Card>
+                                    ))}
+                                    <img src={Image3} className="img-fluid mb-3 w-100 d-lg-none rounded" alt="Carnes Image" />
+                                </div>
+
+                                <div className="btn text-center">
+                                    <MenuBtn />
+                                </div>
                             </div>
 
-                            <div className="col-lg d-flex flex-column align-items-center mb-5 mb-lg-0">
-                                <h3 className="fs-2 mb-5">Bebidas</h3>
-                                <ul className="px-0">
-                                    <li className="d-flex justify-content-between">
-                                        <p className="fs-3 mx-2">Caipiras</p>
-                                        <p className="fs-3 mx-2 text-success fw-bold"></p>
-                                    </li>
-                                    <li className="d-flex justify-content-between">
-                                        <p className="fs-3 mx-2">Sucos naturais</p>
-                                        <p className="fs-3 mx-2 text-success fw-bold"></p>
-                                    </li>
-                                    <li className="d-flex justify-content-between">
-                                        <p className="fs-3 mx-2">Gin tropical</p>
-                                        <p className="fs-3 mx-2 text-success fw-bold"></p>
-                                    </li>
-                                    <li className="d-flex justify-content-between">
-                                        <p className="fs-3 mx-2">Coquetel de frutas</p>
-                                        <p className="fs-3 mx-2 text-success fw-bold"></p>
-                                    </li>
-                                </ul>
+
+                            <div className="col-lg-4 d-none d-lg-flex flex-column align-items-center justify-content-center">
+                                <img src={Image1} className="img-fluid mb-3 rounded" alt="Frutos do Mar Image" />
+                                <img src={Image2} className="img-fluid mb-3 rounded" alt="Peixes Image" />
+                                <img src={Image3} className="img-fluid mb-3 rounded" alt="Carnes Image" />
                             </div>
                         </div>
-                        <MenuBtn />
                     </div>
                 </div>
             </div>
