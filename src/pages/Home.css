@@ -247,7 +247,7 @@ h1, h2, h3 {
 
     .alacarte {
         padding: 1.5rem 0.5rem; 
-        background-size: cover
+        background-attachment: scroll; 
     }
 
     .alacarte .menu-group {
