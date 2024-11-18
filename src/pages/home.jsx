@@ -86,8 +86,8 @@ function Home() {
                 </div>
             </div>
             <div className="container my-5">
-                <div className="alacarte text-light py-5">
-                    <div className="container">
+                <div className="alacarte  text-light py-5">
+                    <div className="container ">
                         <div className="row flex-column flex-lg-row">
                             <div className="col-lg-8 d-flex flex-column justify-content-around">
                                 <h2 className="text-center fs-2 mb-4 mb-lg-5  text-light">Alguns de nossos pratos e drinks</h2>

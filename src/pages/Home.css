@@ -72,6 +72,8 @@ h1, h2, h3 {
     color: #fff; 
 }
 
+
+
 .alacarte::before {
     content: "";
     position: absolute;
@@ -175,7 +177,7 @@ h1, h2, h3 {
     }
 
     .home-page header h1{
-        font-size: 1.9rem;
+        font-size: 2rem;
         margin: 10px 0;
         bottom: 20px;
     }
@@ -253,10 +255,11 @@ h1, h2, h3 {
         padding: 1.5rem 0.5rem; 
     }
 
-    .alacarte::before {
-        background-attachment: fixed; 
-        position: absolute;
+    .alacarte .container {
+        background-attachment: fixed;
+        z-index: 2;
     }
+    
 
     .alacarte .menu-group {
         text-align: center;
