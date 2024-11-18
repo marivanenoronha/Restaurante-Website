@@ -247,7 +247,10 @@ h1, h2, h3 {
 
     .alacarte {
         padding: 1.5rem 0.5rem; 
-        background-attachment: scroll; 
+    }
+
+    .alacarte::before {
+        position: fixed; 
     }
 
     .alacarte .menu-group {
