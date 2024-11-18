@@ -107,8 +107,6 @@ function Home() {
                                     ))}
                                     <img src={Image1} className="img-fluid mb-3 w-100 d-lg-none rounded" alt="Frutos do Mar Image" />
                                 </div>
-
-
                                 <div className="menu-group">
                                     {alacarte.filter(item => item.category === 'peixes').map((item) => (
                                         <Card className="border-0" key={item.id}>
@@ -140,7 +138,7 @@ function Home() {
                                             </CardBody>
                                         </Card>
                                     ))}
-                                    <img src={Image3} className="img-fluid mb-3 w-100 d-lg-none rounded" alt="Carnes Image" />
+                                    <img src={Image3} className="img-fluid mb-3 w-100 d-lg-none rounded" alt="Drinks Image" />
                                 </div>
 
                                 <div className="btn text-center">
@@ -152,7 +150,7 @@ function Home() {
                             <div className="col-lg-4 d-none d-lg-flex flex-column align-items-center justify-content-center">
                                 <img src={Image1} className="img-fluid mb-3 rounded" alt="Frutos do Mar Image" />
                                 <img src={Image2} className="img-fluid mb-3 rounded" alt="Peixes Image" />
-                                <img src={Image3} className="img-fluid mb-3 rounded" alt="Carnes Image" />
+                                <img src={Image3} className="img-fluid mb-3 rounded" alt="Drinks Image" />
                             </div>
                         </div>
                     </div>
