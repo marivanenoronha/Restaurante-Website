@@ -247,11 +247,11 @@ h1, h2, h3 {
 
     .alacarte {
         padding: 1.5rem 0.5rem; 
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
     }
 
-    .alacarte::before {
-        position: fixed; 
-    }
 
     .alacarte .menu-group {
         text-align: center;
