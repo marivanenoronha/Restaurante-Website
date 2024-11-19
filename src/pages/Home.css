@@ -15,11 +15,16 @@ header h1 {
 .home-page header h1,
 .home-page header h2 {
     position: relative;
-    text-shadow: 2px 2px 8px #fff;
 }
 
 h1, h2, h3 {
     font-family: "Sofia Sans", sans-serif;
+}
+
+.container .col-lg ,
+.col-lg-6{
+    position: relative;
+    top: 50px;
 }
 
 .main-img, .overlay-img {
@@ -62,7 +67,7 @@ h1, h2, h3 {
 }
 
 
-.alacarte {
+.home-page .alacarte {
     background-image: url('../fotos/img/about-chef1.jpg'); 
     background-size: cover;
     background-position: center;
@@ -74,7 +79,7 @@ h1, h2, h3 {
 
 
 
-.alacarte::before {
+.home-page .alacarte::before {
     content: "";
     position: absolute;
     top: 0;
@@ -85,18 +90,18 @@ h1, h2, h3 {
     z-index: 1;
 }
 
-.alacarte .container {
+.home-page .alacarte .container {
     position: relative;
     z-index: 2;
 }
 
-.alacarte .card {
+.home-page .alacarte .card {
     background: none; 
     border: none; 
     color: #fff; 
 }
 
-.alacarte h2, .alacarte .btn, .alacarte .card-title, .alacarte .card-text {
+.home-page .alacarte h2, .alacarte .btn, .alacarte .card-title, .alacarte .card-text {
     color: #fff;
     
 }

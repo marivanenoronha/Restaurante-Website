@@ -50,7 +50,7 @@ function About() {
                     Além de outros pratos deliciosos como o Polvo à Timoneiro. Também temos pratos vegetarianos, pratos sem glúten e sem lactose, consulte o garçom. Temos pratos de carnes e frangos. Petiscos para um happy hour delicioso com uma vista maravilhosa. Temos espaço para eventos de finais de ano,
                     aniversários formaturas.</p>
             </div>
-            <div className="bg-dark text-light">
+            <div className=" text-dark">
                 <ImageGallery />
             </div>
             <Reviews />

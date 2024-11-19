@@ -1,8 +1,39 @@
-.menu-page header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url(../fotos//img/menu.img.png);
-    height: 50vh;
+
+.menu-page .alacarte {
+    margin-top: 50px;
 }
+
+.category-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.category-item {
+    width: 22%;
+    margin-bottom: 20px;
+}
+
+.category-item img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+}
+
+.category-button {
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.text-center.mt-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 
 .menu-page .whatsapp-container {
     position: fixed;
@@ -46,72 +77,157 @@
     }
 }
 
+@media (max-width: 768px) {
+    .category-item {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+}
 
-@media (max-width: 375px) {
+
+@media (max-width: 475px) {
+
     .menu-page .container {
         padding: 0 15px;
     }
 
     .menu-page header h1 {
+        position: relative;
         font-size: 1.9rem;
         text-align: center;
+        top: 50px;
     }
 
-    .menu-page  h2 {
+    .menu-page h2 {
         position: relative;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         text-align: center;
         top: 10px;
     }
 
-    .menu-page .alacarte img,
-    .menu-page .aperitivo img,
-    .menu-page .drink img {
-        width: 100%;
-        height: auto;
-        margin-bottom: 20px;
-    }
-
     .menu-page .col-lg-6 {
-        flex-direction: column;
+        flex-direction: row;
         gap: 15px;
-
+        font-size: 0.9rem;
     }
 
     .menu-page .row {
         flex-direction: column;
     }
 
-    .menu-page .alacarte .fs-1,
-    .menu-page .aperitivo .fs-1,
-    .menu-page .drink .fs-1 {
-        font-size: 1.25rem;
-    }
-
-    .menu-page .card-body {
-        padding: 10px;
+    .menu-page .card {
+        margin-bottom: 10px;
     }
 
     .menu-page .card-title {
-        font-size: 1.1rem;
+        font-size: 0.7rem;
     }
 
     .menu-page .card-text {
-        font-size: 1rem;
+        font-size: 0.7rem;
+    }
+
+    .menu-page .btn-dark {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+        width: 100%;
+    }
+
+    .menu-page .img-fluid {
+        height: 150px;
     }
 
     .menu-page .whatsapp-container {
-        bottom: 215px;
-         right: 10px; 
-     }
- 
-     .menu-page .welcome-message {
-         font-size: 8px; 
-     }
- 
-     .menu-page .whatsapp-icon {
-         font-size: 18px;
-     }
+        bottom: 10px;
+        right: 10px;
+    }
 
-   
+    .menu-page .welcome-message {
+        font-size: 8px;
+    }
+
+    .menu-page .whatsapp-icon {
+        font-size: 18px;
+    }
+
+    .menu-page .text-center.mt-4 {
+        justify-content: center;
+    }
+
+    .menu-page .btn {
+        font-size: 1.3rem !important;
+        padding: 0.8rem 1.rem !important;
+        width: 90%;
+
+    }
+
+    .menu-page .custom-btn {
+        font-size: 1.4rem !important;
+        padding: 0.8rem 1.rem !important;
+    }
+
+    .btn .fab {
+        margin-left: 0 !important;
+        margin-top: 0.5rem !important;
+    }
+
+    .menu-page .qr-code {
+        width: 60px;
+        height: 60px;
+    }
+
+    .menu-page .text-center {
+        flex-direction: column;
+    }
+
+
+    .menu-page .text-center {
+        font-size: 1rem !important;
+    }
+
+    .menu-page .menu {
+        font-size: 1.5rem !important;
+    }
+
+    .menu-page .menu-name {
+        font-size: 1.2rem !important;
+    }
+
+    .category-item {
+        width: 90%;
+    }
+
+    .category-item img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    .category-button {
+        font-size: 1rem !important;
+        padding: 10px 5px !important;
+    }
+
+    .menu-page .list-group-item .d-flex {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .menu-page .list-group-item .d-flex .fs-6 {
+        font-size: 1rem;
+    }
+
+    .menu-page .list-group-item .fs-6 {
+        font-size: 0.9rem;
+    }
+
+    .menu-page .list-group-item .text-muted {
+        font-size: 0.7rem;
+        margin-top: 0.2rem;
+    }
+
+
 }
