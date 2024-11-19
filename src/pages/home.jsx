@@ -82,20 +82,25 @@ function Home() {
 
             <div className="container my-4 zoom-group">
                 <div className="row position-relative">
-                    
+
                 </div>
             </div>
             <div className="container my-5">
-                <div className="alacarte  text-light py-5">
+                <div className="alacarte  text-dark py-5">
                     <div className="container ">
                         <div className="row flex-column flex-lg-row ">
+                        <div className="col-lg-4 d-none d-lg-flex flex-column align-items-center justify-content-center">
+                                    <img src={Image1} className="img-fluid mb-3 rounded" alt="Frutos do Mar Image" />
+                                    <img src={Image2} className="img-fluid mb-3 rounded" alt="Peixes Image" />
+                                    <img src={Image3} className="img-fluid mb-3 rounded" alt="Drinks Image" />
+                                </div>
                             <div className="col-lg-8 d-flex flex-column justify-content-around">
-                                <h2 className="text-center fs-2 mb-4 mb-lg-5  text-light">Alguns de nossos pratos e drinks</h2>
+                                <h2 className="text-center fs-2 mb-4 mb-lg-5  text-dark">Alguns de nossos pratos e drinks</h2>
                                 <div className="menu-group">
                                     {alacarte.filter(item => item.category === 'frutos do mar').map((item) => (
                                         <Card className="border-0" key={item.id}>
                                             <CardBody>
-                                                <CardTitle className="text-center fs-4 text-light">
+                                                <CardTitle className="text-center fs-4 text-dark">
                                                     {item.name}
                                                 </CardTitle>
                                                 <CardText className="text-center fs-5">
@@ -111,7 +116,7 @@ function Home() {
                                     {alacarte.filter(item => item.category === 'peixes').map((item) => (
                                         <Card className="border-0" key={item.id}>
                                             <CardBody>
-                                                <CardTitle className="text-center fs-4 text-light">
+                                                <CardTitle className="text-center fs-4 text-">
                                                     {item.name}
                                                 </CardTitle>
                                                 <CardText className="text-center fs-5">
@@ -129,7 +134,7 @@ function Home() {
                                     {alacarte.filter(item => item.category === 'drinks').map((item) => (
                                         <Card className="border-0" key={item.id}>
                                             <CardBody>
-                                                <CardTitle className="text-center fs-4 text-light">
+                                                <CardTitle className="text-center fs-4 text-dark">
                                                     {item.name}
                                                 </CardTitle>
                                                 <CardText className="text-center fs-5">
@@ -147,11 +152,7 @@ function Home() {
                             </div>
 
 
-                            <div className="col-lg-4 d-none d-lg-flex flex-column align-items-center justify-content-center">
-                                <img src={Image1} className="img-fluid mb-3 rounded" alt="Frutos do Mar Image" />
-                                <img src={Image2} className="img-fluid mb-3 rounded" alt="Peixes Image" />
-                                <img src={Image3} className="img-fluid mb-3 rounded" alt="Drinks Image" />
-                            </div>
+
                         </div>
                     </div>
                 </div>
