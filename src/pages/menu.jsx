@@ -967,14 +967,10 @@ const Menu = () => {
             }}
         >
 
-            <div
-                className="menu-page"
-                style={{
-                    '--scrollY': '0px', // Valor inicial para scroll
-                    backgroundPosition: `center var(--scrollY)`,
-                }}
-            ></div>
-            <div className="menu-page" style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)', minHeight: '100vh' }}
+            <div className="menu-page" style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)', minHeight: '100vh',
+                  '--scrollY': '0px', // Valor inicial para scroll
+                  backgroundPosition: `center var(--scrollY)`,
+             }}
 
             >
                 <div className="alacarte text-light py-5">
