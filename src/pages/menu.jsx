@@ -935,7 +935,26 @@ const Menu = () => {
 
     const categoriesDrinks = ["Refrigerantes", "Sucos", "Cervejas", "Caipiras", "Drinks", "Taça de vinho", "Doses"];
 
+    function useFixedBackground() {
+        useEffect(() => {
+            const menuPage = document.querySelector('.menu-page');
 
+            const handleScroll = () => {
+                const scrollY = window.scrollY;
+                if (menuPage) {
+                    menuPage.style.setProperty('--scrollY', `${scrollY * 0.5}px`);
+                }
+            };
+
+            window.addEventListener('scroll', handleScroll);
+
+            return () => {
+                window.removeEventListener('scroll', handleScroll);
+            };
+        }, []);
+    }
+
+    useFixedBackground();
 
     return (
 
@@ -945,10 +964,19 @@ const Menu = () => {
                 backgroundSize: 'cover',
                 backgroundAttachment: 'fixed',
                 backgroundPosition: 'center',
-            }} >
+            }}
+        >
 
+            <div
+                className="menu-page"
+                style={{
+                    '--scrollY': '0px', // Valor inicial para scroll
+                    backgroundPosition: `center var(--scrollY)`,
+                }}
+            ></div>
+            <div className="menu-page" style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)', minHeight: '100vh' }}
 
-            <div className="menu-page" style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)', minHeight: '100vh' }}>
+            >
                 <div className="alacarte text-light py-5">
                     <div className="container">
                         <h2 className=" menu text-center fs-1 mb-4 mb-lg-5 text-uppercase fw-bold text-light">Cardápio</h2>
@@ -970,13 +998,13 @@ const Menu = () => {
                                         style={{ width: "100%", height: "120px", objectFit: "cover" }}
                                     />
 
-                                   
-                                <button
-                                    className= {`category-button btn btn-outline-light  w-100 ${selectedCategory === category ? "active" : ""} `}
-                                    onClick={() => handleCategoryClick(category)}
-                                >
-                                    {category}
-                                </button>
+
+                                    <button
+                                        className={`category-button btn btn-outline-light  w-100 ${selectedCategory === category ? "active" : ""} `}
+                                        onClick={() => handleCategoryClick(category)}
+                                    >
+                                        {category}
+                                    </button>
                                 </div>
                             ))}
                         </div>
