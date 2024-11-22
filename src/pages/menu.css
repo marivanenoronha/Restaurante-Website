@@ -34,6 +34,24 @@
 
 
 
+.menu-page {
+    position: relative;
+    min-height: 100vh; 
+    overflow: hidden;
+}
+
+.menu-page::before {
+    content: "";
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh; 
+    background-size: cover;
+    background-position: center;
+    z-index: -1; 
+}
+
 
 .menu-page .whatsapp-container {
     position: fixed;
@@ -87,6 +105,7 @@
 
 
 @media (max-width: 475px) {
+    
 
     .menu-page .container {
         padding: 0 15px;
@@ -166,7 +185,11 @@
         font-size: 1.4rem !important;
         padding: 0.8rem 1.rem !important;
     }
-
+    
+    .menu-page::before {
+        background-attachment: fixed; 
+    }
+    
     .btn .fab {
         margin-left: 0 !important;
         margin-top: 0.5rem !important;

@@ -948,7 +948,7 @@ const Menu = () => {
             }} >
 
 
-            <div className="menu-page" style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)', minHeight: '100vh' }}>
+            <div className="menu-page" style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)', minHeight: '100vh' }}>
                 <div className="alacarte text-light py-5">
                     <div className="container">
                         <h2 className=" menu text-center fs-1 mb-4 mb-lg-5 text-uppercase fw-bold text-light">Cardápio</h2>
