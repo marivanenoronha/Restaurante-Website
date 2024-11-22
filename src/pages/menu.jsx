@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useRef, useEffect } from "react";
 import "./menu.css";
-import MenuImg from "../fotos/img/gallery3.jpg"
+import { ContactInfo } from "../components/ContactInfo";
 import { Card, CardBody, CardText, CardTitle } from "react-bootstrap";
 import Image1 from "../fotos/img/gallery7.jpg";
 import Image2 from "../fotos/img/gallery8.jpg";
@@ -58,7 +58,7 @@ import Image52 from "../fotos/img/desserts3.jpg";
 import Image53 from "../fotos/img/desserts2.jpg";
 import Image54 from "../fotos/img/desserts1.jpg";
 import gallery1 from '../fotos/img/gallery12.jpg';
-import gallery2 from '../fotos/img/gallery9.jpg';
+import gallery2 from '../fotos/img/gallery2.jpg';
 import gallery3 from '../fotos/img/gallery16.jpg';
 import gallery4 from '../fotos/img/gallery36.jpg';
 import gallery5 from '../fotos/img/gallery11.jpg';
@@ -935,47 +935,20 @@ const Menu = () => {
 
     const categoriesDrinks = ["Refrigerantes", "Sucos", "Cervejas", "Caipiras", "Drinks", "Taça de vinho", "Doses"];
 
-    function useFixedBackground() {
-        useEffect(() => {
-            const menuPage = document.querySelector('.menu-page');
 
-            const handleScroll = () => {
-                const scrollY = window.scrollY;
-                if (menuPage) {
-                    menuPage.style.setProperty('--scrollY', `${scrollY * 0.5}px`);
-                }
-            };
-
-            window.addEventListener('scroll', handleScroll);
-
-            return () => {
-                window.removeEventListener('scroll', handleScroll);
-            };
-        }, []);
-    }
-
-    useFixedBackground();
 
     return (
 
-        <div
-            style={{
-                backgroundImage: `url(${MenuImg})`,
-                backgroundSize: 'cover',
-                backgroundAttachment: 'fixed',
-                backgroundPosition: 'center',
-            }}
-        >
-
-            <div className="menu-page" style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)', minHeight: '100vh',
-                  '--scrollY': '0px', // Valor inicial para scroll
-                  backgroundPosition: `center var(--scrollY)`,
-             }}
-
-            >
-                <div className="alacarte text-light py-5">
+        <div >
+            <div className="menu-page"  >
+                <header className="mt-5">
+                    <div className="container h-100 d-flex align-items-center justify-content-center">
+                        <h1 className="text-light slide-in-down">Cardápio</h1>
+                    </div>
+                </header>
+                <div className="alacarte text-dark py-5">
                     <div className="container">
-                        <h2 className=" menu text-center fs-1 mb-4 mb-lg-5 text-uppercase fw-bold text-light">Cardápio</h2>
+                        <h2 className=" menu text-center fs-1 mb-4 mb-lg-5 text-uppercase fw-bold text-dark">Cardápio</h2>
                         <div className="text-center mb-5 d-flex justify-content-center flex-wrap category-grid">
                             {categories.map((category, index) => (
                                 <div
@@ -996,7 +969,7 @@ const Menu = () => {
 
 
                                     <button
-                                        className={`category-button btn btn-outline-light  w-100 ${selectedCategory === category ? "active" : ""} `}
+                                        className={`category-button btn btn-outline-dark  w-100 ${selectedCategory === category ? "active" : ""} `}
                                         onClick={() => handleCategoryClick(category)}
                                     >
                                         {category}
@@ -1006,7 +979,7 @@ const Menu = () => {
                         </div>
                         {selectedCategory && (
                             <div ref={itemsRef}>
-                                <h3 className=" menu text-center fs-2 mb-4 fw-bold text-light">{selectedCategory}</h3>
+                                <h3 className=" menu text-center fs-2 mb-4 fw-bold text-dark">{selectedCategory}</h3>
                                 <div className="row">
                                     {alacarte
                                         .filter((item) => item.category.toLowerCase() === selectedCategory.toLowerCase())
@@ -1030,7 +1003,7 @@ const Menu = () => {
                                         ))}
                                 </div>
                                 <div className="text-center mt-4">
-                                    <button className="btn btn-light" onClick={handleCloseClick}>
+                                    <button className="btn btn-dark" onClick={handleCloseClick}>
                                         Fechar
                                     </button>
                                 </div>
@@ -1042,7 +1015,7 @@ const Menu = () => {
                 <div className="drink   my-5">
                     <div className="container">
                         <div className="row justify-content-center">
-                            <h2 className=" menu text-center fs-1 mb-4 mb-lg-5 text-uppercase fw-bold text-light">Drinks</h2>
+                            <h2 className=" menu text-center fs-1 mb-4 mb-lg-5 text-uppercase fw-bold text-dark">Drinks</h2>
                             <div className="text-center mb-5 d-flex justify-content-center flex-wrap category-grid">
                                 {categoriesDrinks.map((category, index) => (
                                     <div
@@ -1059,7 +1032,7 @@ const Menu = () => {
                                             style={{ width: "100%", height: "120px", objectFit: "cover" }}
                                         />
                                         <button
-                                            className={`category-button btn btn-outline-light w-100 ${categoryDrinks === category ? "active" : ""}`}
+                                            className={`category-button btn btn-outline-dark w-100 ${categoryDrinks === category ? "active" : ""}`}
                                             onClick={() => handleDrinksClick(category)}
                                         >
                                             {category}
@@ -1069,7 +1042,7 @@ const Menu = () => {
                             </div>
                             {categoryDrinks && (
                                 <div ref={drinksItemsRef}>
-                                    <h3 className=" menu text-center fs-2 mb-4 text-light">{categoryDrinks}</h3>
+                                    <h3 className=" menu text-center fs-2 mb-4 text-dark">{categoryDrinks}</h3>
                                     <ul className="list-group">
                                         {drinks
                                             .filter((item) => item.category.toLowerCase() === categoryDrinks.toLowerCase())
@@ -1088,7 +1061,7 @@ const Menu = () => {
                                             ))}
                                     </ul>
                                     <div className="text-center mt-4">
-                                        <button className="btn btn-light" onClick={handleDrinksCloseClick}>
+                                        <button className="btn btn-dark" onClick={handleDrinksCloseClick}>
                                             Fechar
                                         </button>
                                     </div>
@@ -1110,6 +1083,7 @@ const Menu = () => {
                     </a>
                 </div>
             </div>
+            <ContactInfo />
         </div>
     )
 }

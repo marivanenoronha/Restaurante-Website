@@ -8,6 +8,8 @@ import Image2 from "../fotos/img/gallery2.jpg";
 import Image3 from "../fotos/img/drink-img.jpg";
 import { MenuBtn } from "../components/menu.Btn";
 import AboutImg from "../fotos/img/about-chef2.jpg";
+import AboutImg1 from "../fotos/img/about-chef1.jpg";
+import AboutImg2 from "../fotos/img/gallery6.jpg";
 import { ImageGallery } from "../components/imageGalery";
 import { ContactInfo } from "../components/ContactInfo";
 import { Reviews } from "../components/Reviews";
@@ -74,8 +76,8 @@ function Home() {
                     </div>
                     <div className="col-lg-6 d-flex justify-content-center position-relative  d-lg-flex zoom">
                         <img src={AboutImg} className="main-img img-fluid" alt="Sobre nós imagem 1" />
-                        <img src={Image2} className="img-fluid position-absolute overlay-img overlay-img-left" alt="Sobre nós imagem 2" />
-                        <img src={Image3} className="img-fluid position-absolute overlay-img overlay-img-right" alt="Sobre nós imagem 3" />
+                        <img src={AboutImg1} className="img-fluid position-absolute overlay-img overlay-img-left" alt="Sobre nós imagem 2" />
+                        <img src={AboutImg2} className="img-fluid position-absolute overlay-img overlay-img-right" alt="Sobre nós imagem 3" />
                     </div>
                 </div>
             </div>

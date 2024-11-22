@@ -1,10 +1,11 @@
 import React from "react";
 import "./About.css";
 import { useState, useEffect } from 'react';
-import AboutChef3 from "../fotos/img/About-chef4.jpg";
-import AboutChef4 from "../fotos/img/about-chef2.jpg";
+import AboutChef3 from "../fotos/img/about-chef2.jpg";
+import AboutChef4 from "../fotos/img/gallery6.jpg";
 import { ImageGallery } from "../components/imageGalery";
 import { Reviews } from "../components/Reviews";
+import { ContactInfo } from "../components/ContactInfo";
 
 function About() {
 
@@ -83,7 +84,7 @@ function About() {
                     <i className="fab fa-whatsapp fa-3x text-success"></i>
                 </a>
             </div>
-
+            <ContactInfo />
         </div>
     )
 }
