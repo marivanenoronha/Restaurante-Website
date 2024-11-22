@@ -939,17 +939,16 @@ const Menu = () => {
 
     return (
 
-        <div 
-        style={{
-            backgroundImage: `url(${MenuImg})`,
-            backgroundSize: 'cover',
-            backgroundAttachment: 'fixed',
-            backgroundPosition: 'center',
-          }} >
+        <div
+            style={{
+                backgroundImage: `url(${MenuImg})`,
+                backgroundSize: 'cover',
+                backgroundAttachment: 'fixed',
+                backgroundPosition: 'center',
+            }} >
 
-            
+
             <div className="menu-page" style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)', minHeight: '100vh' }}>
-
                 <div className="alacarte text-light py-5">
                     <div className="container">
                         <h2 className=" menu text-center fs-1 mb-4 mb-lg-5 text-uppercase fw-bold text-light">Cardápio</h2>
@@ -971,12 +970,13 @@ const Menu = () => {
                                         style={{ width: "100%", height: "120px", objectFit: "cover" }}
                                     />
 
-                                    <button
-                                        className={`category-button btn btn-outline-light  w-100 ${selectedCategory === category ? "active" : ""} `}
-                                        onClick={() => handleCategoryClick(category)}
-                                    >
-                                        {category}
-                                    </button>
+                                   
+                                <button
+                                    className= {`category-button btn btn-outline-light  w-100 ${selectedCategory === category ? "active" : ""} `}
+                                    onClick={() => handleCategoryClick(category)}
+                                >
+                                    {category}
+                                </button>
                                 </div>
                             ))}
                         </div>
@@ -1073,7 +1073,7 @@ const Menu = () => {
                         </div>
                     </div>
                 </div>
-    
+
 
                 <div className="whatsapp-container position-fixed d-flex align-items-center">
                     <a

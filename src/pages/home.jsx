@@ -103,7 +103,7 @@ function Home() {
                                                 <CardTitle className="text-center fs-4 text-dark">
                                                     {item.name}
                                                 </CardTitle>
-                                                <CardText className="text-center fs-5">
+                                                <CardText className="text-center fs-5 text-dark">
                                                     {item.description}
                                                 </CardText>
 
@@ -116,10 +116,10 @@ function Home() {
                                     {alacarte.filter(item => item.category === 'peixes').map((item) => (
                                         <Card className="border-0" key={item.id}>
                                             <CardBody>
-                                                <CardTitle className="text-center fs-4 text-">
+                                                <CardTitle className="text-center fs-4 text-dark">
                                                     {item.name}
                                                 </CardTitle>
-                                                <CardText className="text-center fs-5">
+                                                <CardText className="text-center fs-5 text-dark">
                                                     {item.description}
                                                 </CardText>
 
@@ -137,7 +137,7 @@ function Home() {
                                                 <CardTitle className="text-center fs-4 text-dark">
                                                     {item.name}
                                                 </CardTitle>
-                                                <CardText className="text-center fs-5">
+                                                <CardText className="text-center fs-5 text-dark">
                                                     {item.description}
                                                 </CardText>
                                             </CardBody>

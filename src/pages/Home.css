@@ -101,11 +101,6 @@ h1, h2, h3 {
     color: #fff; 
 }
 
-.home-page .alacarte h2, .alacarte .btn, .alacarte .card-title, .alacarte .card-text {
-    color: #242323;
-    
-}
-
 .whatsapp-container {
     position: fixed;
     bottom: 20px;
